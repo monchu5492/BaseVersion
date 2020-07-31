@@ -1,0 +1,124 @@
+@import "globals";
+
+div[id="add-user"] {
+  height: 320px;
+  border-bottom-color: darken($light-blue, 40%);
+  border-right-color: darken($light-blue, 40%);
+  margin: 1em;
+  padding: 0;
+  display: inline-table;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: white;
+
+  @media screen and (min-width: $break-sm) {
+    flex-basis: calc(50% - 2em - 4px);
+  }
+
+  @media screen and (min-width: $break-md) {
+    flex-basis: calc(33.33333% - 2em - 4px);
+  }
+
+  @media screen and (min-width: $break-lg) {
+    flex-basis: calc(25% - 2em - 4px);
+  }
+
+  @media screen and (min-width: $break-xl) {
+    flex-basis: calc(16.66666% - 2em - 4px);
+  }
+  form {
+    position: relative;
+    width: 55%;
+    display: grid;
+    background-color: #ffffff;
+
+    > :first-child {
+      flex-grow: 0;
+    }
+
+    input, button {
+      background-color: lightblue;
+      color: black;
+      border: cornflowerblue;
+      padding: 6px 17px;
+      font-size: 17px;
+      border-style: ridge;
+      border-radius: 41px;
+      max-width: fit-content;
+    }
+
+    span[id="greenText"] {
+      color: green;
+      font-weight: bold;
+    }
+
+    input[type="email"] {
+      margin: 8px;
+      display: block;
+      border: 1px solid #bbb;
+      color: #515151;
+      outline: 0;
+      padding: 6px;
+      font-size: 1.1em;
+      width: fit-content;
+      border-radius: 4px;
+      background: url('../src/components/ui/images/almonds/email.png') no-repeat 10px 8px;
+      background-size: 16px 16px;
+      padding-left: 32px;
+    }
+
+    input[type="password"] {
+      margin: 8px;
+      display: block;
+      border: 1px solid #bbb;
+      color: #515151;
+      outline: 0;
+      padding: 6px;
+      font-size: 1.1em;
+      width: fit-content;
+      border-radius: 4px;
+      background: url('../src/components/ui/images/almonds/698630-icon-114-lock-128.png') no-repeat 10px 8px;
+      background-size: 16px 16px;
+      padding-left: 32px;
+    }
+
+    input[type="name"] {
+           margin: 8px;
+           display: block;
+           border: 1px solid #bbb;
+           color: #515151;
+           outline: 0;
+           padding: 6px;
+           font-size: 1.1em;
+           width: fit-content;
+           border-radius: 4px;
+           background: url('../src/components/ui/images/almonds/anyPerson.png') no-repeat 10px 8px;
+           background-size: 16px 16px;
+           padding-left: 32px;
+         }
+
+    input[type="number"] {
+      margin: 8px;
+      display: block;
+      border: 1px solid #bbb;
+      color: #515151;
+      outline: 0;
+      padding: 6px;
+      font-size: 1.1em;
+      width: fit-content;
+      border-radius: 4px;
+      background: url('../src/components/ui/images/almonds/plus-square-line.png') no-repeat 10px 8px;
+      background-size: 16px 16px;
+      padding-left: 32px;
+    }
+
+    input[type="text"] {
+      background-color: white;
+      padding: 0;
+      height: +2em;
+      width: 250px;
+      border-style: double;
+    }
+
+  }
+}

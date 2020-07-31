@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="edd1c52e-dddc-406d-8e31-977b7a159d7f" name="Default" comment="Files supporting Enzyme and Component unit testing" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="wildalmonds_base" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="OwnerTournament.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ui/OwnerTournament.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="2" selection-start-line="39" selection-end-line="39" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="81" column="20" lean-forward="true" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#212#246#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dev-api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/dev-api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="36" column="5" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="36" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sequelize.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/sequelize.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server_3030.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/SocketIO/server_3030.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wildAlmondsPromise.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/server/wildAlmondsPromise.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tranDBPool.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/tranDBPool.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="OwnerList.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ui/OwnerList.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OwnerDashboard.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ui/OwnerDashboard.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>invitesL</find>
+      <find>orders</find>
+      <find>scores</find>
+      <find>squaresLi</find>
+      <find>comment</find>
+      <find>invitedG</find>
+      <find>invitedU</find>
+      <find>FETCH_PI</find>
+      <find>Thanks</find>
+      <find>expire</find>
+      <find>testState</find>
+      <find>sendOrder</find>
+      <find>invited</find>
+      <find>sendorder</find>
+      <find>owner</find>
+      <find>decorateTournamentsPromise</find>
+      <find>mapTournamentGames</find>
+      <find>mapGameInvites</find>
+      <find>gameAvailableIn</find>
+      <find>apidev</find>
+      <find>totalAvailableIn</find>
+      <find>video</find>
+      <find>logout</find>
+      <find>fetchLo</find>
+      <find>Logout</find>
+      <find>Owner Panel</find>
+      <find>Pay</find>
+      <find>sgMail</find>
+      <find>forgot</find>
+      <find>games</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>Reset</replace>
+      <replace>'NULL'</replace>
+      <replace>event</replace>
+      <replace>()</replace>
+      <replace>InviteCard</replace>
+      <replace>devPath</replace>
+      <replace>apiPath</replace>
+      <replace>emailAddr</replace>
+      <replace>Encode</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/ui/InvitePending.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ui/ScoreBoardList.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ui/ScoreBoard.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ui/TournamentList.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ui/Tournament.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ui/PlayList.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ui/AddTournamentForm.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ui/Play.jsx" />
+        <option value="$PROJECT_DIR$/src/lib/array-helpers.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/Countdown.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/PlayerName.jsx" />
+        <option value="$PROJECT_DIR$/src/store/reducer_picks.js" />
+        <option value="$PROJECT_DIR$/src/selectors.js" />
+        <option value="$PROJECT_DIR$/src/store/index.js" />
+        <option value="$PROJECT_DIR$/src/store/reducers.js" />
+        <option value="$PROJECT_DIR$/data/initialWAState.json" />
+        <option value="$PROJECT_DIR$/src/server/games.js" />
+        <option value="$PROJECT_DIR$/src/actions.js" />
+        <option value="$PROJECT_DIR$/src/server/sendOrder.js" />
+        <option value="$PROJECT_DIR$/src/server/sendInvite.js" />
+        <option value="$PROJECT_DIR$/src/server/sendMail.js" />
+        <option value="$PROJECT_DIR$/src/server/players.js" />
+        <option value="$PROJECT_DIR$/src/server/index.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/OwnerList.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ui/OrderPending.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ui/TournamentDetails.js" />
+        <option value="$PROJECT_DIR$/src/server/adaptation.js" />
+        <option value="$PROJECT_DIR$/app/config/passport/LoginStrategy.js" />
+        <option value="$PROJECT_DIR$/app/models/pick.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/PicksRemain.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ui/OwnerDashboard.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ui/SendInvitePage.jsx" />
+        <option value="$PROJECT_DIR$/routes/users.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/ItemTypes.js" />
+        <option value="$PROJECT_DIR$/stylesheets/AddUserForm.scss" />
+        <option value="$PROJECT_DIR$/src/components/ui/Timer.jsx" />
+        <option value="$PROJECT_DIR$/src/lib/tranDBPool.js" />
+        <option value="$PROJECT_DIR$/docs/db07302020.txt" />
+        <option value="$PROJECT_DIR$/src/pages.js" />
+        <option value="$PROJECT_DIR$/src/menus.js" />
+        <option value="$PROJECT_DIR$/src/server/invited.js" />
+        <option value="$PROJECT_DIR$/src/server/SocketIO/connectToTest.js" />
+        <option value="$PROJECT_DIR$/src/components/containers.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/SocketTestRx.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/OwnerTournament.jsx" />
+        <option value="$PROJECT_DIR$/app/config/config.json" />
+        <option value="$PROJECT_DIR$/src/server/app.js" />
+        <option value="$PROJECT_DIR$/src/server/dev-api.js" />
+        <option value="$PROJECT_DIR$/src/server/sequelize.js" />
+        <option value="$PROJECT_DIR$/src/server/SocketIO/server_3030.js" />
+        <option value="$PROJECT_DIR$/src/server/wildAlmondsPromise.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="394" />
+    <option name="y" value="28" />
+    <option name="width" value="1105" />
+    <option name="height" value="994" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="passport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
+              <item name="lcov-report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
+              <item name="lcov-report" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
+              <item name="lcov-report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
+              <item name="lcov-report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
+              <item name="lcov-report" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="private" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="__mocks__" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="almonds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="SocketIO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wildalmonds_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wildalmonds_base" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="SearchEverywhereHistoryKey" value="Andrew&#9;null&#9;null&#10;joinedgames&#9;null&#9;null&#10;game&#9;FILE&#9;file://C:/Users/reida/wildalmonds_rc2/mysqlauth/src/components/ui/GameDetails.js&#10;path&#9;null&#9;null&#10;console.log&#9;null&#9;null&#10;user_id&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../rc3/wildalmonds_rc1" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\reida\JavaScript\sandbox\wildAlmondz\mysqlauth\node_modules\eslint" />
+    <property name="node.js.selected.package.jscs" value="C:\Users\reida\AppData\Roaming\npm\node_modules\jscs" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="node.js.selected.package.standard" value="C:\Users\reida\JavaScript\sandbox\wildAlmondz\mysqlauth\node_modules\eslint" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\reida\wildalmonds\waBase\try1\wildalmonds_base\src\server" />
+      <recent name="C:\Users\reida\wildalmonds\wildalmonds_base\src\server" />
+      <recent name="C:\Users\reida\wildalmonds\wildalmonds_base\src\components\ui\images" />
+      <recent name="C:\Users\reida\wildalmonds\wildalmonds_base\src" />
+      <recent name="C:\Users\reida\wildalmonds\wildalmonds_base\stylesheets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\reida\wildalmonds\wildalmonds_base\stylesheets" />
+      <recent name="C:\Users\reida\wildalmonds\wildalmonds_rc1\src\components\ui" />
+      <recent name="C:\Users\reida\wildalmonds\wildalmonds_rc1\src\server\private" />
+      <recent name="C:\Users\reida\wildalmonds\wildalmonds_rc1\app\config\private" />
+      <recent name="C:\Users\reida\wildalmonds\wildalmonds_rc1\src\server\certificate" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.inviteTester.js">
+    <configuration name="inviteTester.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="inviteTester.js" working-dir="$USER_HOME$/JavaScript/waSurveyDB" />
+    <configuration name="keys1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="keys1.js" working-dir="$USER_HOME$/JavaScript/promises" />
+    <configuration name="maintenance.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="maintenance.js" working-dir="$PROJECT_DIR$/private" />
+    <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$USER_HOME$/WebstormProjects/expressPromise" />
+    <configuration name="slashTester.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="slashTester.js" working-dir="$USER_HOME$/JavaScript/waSurveyDB" />
+    <list>
+      <item itemvalue="Node.js.inviteTester.js" />
+      <item itemvalue="Node.js.slashTester.js" />
+      <item itemvalue="Node.js.keys1.js" />
+      <item itemvalue="Node.js.server.js" />
+      <item itemvalue="Node.js.maintenance.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.inviteTester.js" />
+        <item itemvalue="Node.js.maintenance.js" />
+        <item itemvalue="Node.js.server.js" />
+        <item itemvalue="Node.js.slashTester.js" />
+        <item itemvalue="Node.js.keys1.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="edd1c52e-dddc-406d-8e31-977b7a159d7f" name="Default" comment="" />
+      <created>1511820552000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1511820552000</updated>
+      <workItem from="1511820553159" duration="644000" />
+      <workItem from="1512070737292" duration="3919000" />
+      <workItem from="1519045090944" duration="17200000" />
+      <workItem from="1519159027310" duration="954000" />
+      <workItem from="1519179500702" duration="3044000" />
+      <workItem from="1519243421744" duration="5844000" />
+      <workItem from="1520000752915" duration="6598000" />
+      <workItem from="1520101303244" duration="41410000" />
+      <workItem from="1521907431273" duration="599000" />
+      <workItem from="1521909723825" duration="6000" />
+      <workItem from="1521910004780" duration="4666000" />
+      <workItem from="1521986386838" duration="541000" />
+      <workItem from="1521986949163" duration="3412000" />
+      <workItem from="1521995883072" duration="3450000" />
+      <workItem from="1522089919920" duration="2025000" />
+      <workItem from="1522155752890" duration="25340000" />
+      <workItem from="1526391942951" duration="975000" />
+      <workItem from="1526653886330" duration="538000" />
+      <workItem from="1526994517296" duration="4194000" />
+      <workItem from="1527353052123" duration="9362000" />
+      <workItem from="1527522352885" duration="11434000" />
+      <workItem from="1528292690675" duration="2626000" />
+      <workItem from="1529521465239" duration="1006000" />
+      <workItem from="1530819255031" duration="512000" />
+      <workItem from="1530981540442" duration="834000" />
+      <workItem from="1534017690191" duration="3301000" />
+      <workItem from="1534863477003" duration="598000" />
+      <workItem from="1540607695736" duration="64312000" />
+      <workItem from="1541451575978" duration="16833000" />
+      <workItem from="1541560097483" duration="9884000" />
+      <workItem from="1541622632083" duration="638000" />
+      <workItem from="1541645131289" duration="51544000" />
+      <workItem from="1542593001401" duration="77787000" />
+      <workItem from="1543933487876" duration="22009000" />
+      <workItem from="1544212115514" duration="23887000" />
+      <workItem from="1544706374739" duration="2943000" />
+      <workItem from="1544709473123" duration="325000" />
+      <workItem from="1544710553777" duration="10869000" />
+      <workItem from="1544820953050" duration="39772000" />
+      <workItem from="1545941914321" duration="598000" />
+      <workItem from="1546458551130" duration="29267000" />
+      <workItem from="1547150326940" duration="350000" />
+      <workItem from="1547151168501" duration="24614000" />
+      <workItem from="1547407945287" duration="14028000" />
+      <workItem from="1547644886659" duration="7505000" />
+      <workItem from="1547693507412" duration="75951000" />
+      <workItem from="1549306761215" duration="131355000" />
+      <workItem from="1550019925093" duration="25742000" />
+      <workItem from="1550152740240" duration="7985000" />
+      <workItem from="1550161163564" duration="59193000" />
+      <workItem from="1550503484207" duration="104168000" />
+      <workItem from="1551046487323" duration="12844000" />
+      <workItem from="1551322332525" duration="49329000" />
+      <workItem from="1552330430824" duration="30470000" />
+      <workItem from="1552567065181" duration="4137000" />
+      <workItem from="1552703645720" duration="26412000" />
+      <workItem from="1553593716278" duration="23038000" />
+      <workItem from="1553777523754" duration="11867000" />
+      <workItem from="1553964831032" duration="40782000" />
+      <workItem from="1554348251120" duration="4122000" />
+      <workItem from="1554835366908" duration="2675000" />
+      <workItem from="1554860623137" duration="11312000" />
+      <workItem from="1554948402293" duration="6355000" />
+      <workItem from="1555117379123" duration="47957000" />
+      <workItem from="1556469280711" duration="1264000" />
+      <workItem from="1556474979424" duration="1261000" />
+      <workItem from="1556478990720" duration="1636000" />
+      <workItem from="1556543751728" duration="2040000" />
+      <workItem from="1556545824924" duration="4801000" />
+      <workItem from="1556724893735" duration="1205000" />
+      <workItem from="1557493256507" duration="3652000" />
+      <workItem from="1557543095549" duration="2460000" />
+      <workItem from="1557590029891" duration="2725000" />
+      <workItem from="1557755291678" duration="4414000" />
+      <workItem from="1557839171817" duration="4695000" />
+      <workItem from="1557931395808" duration="2905000" />
+      <workItem from="1557947025562" duration="608000" />
+      <workItem from="1558016998059" duration="1431000" />
+      <workItem from="1558053192004" duration="149000" />
+      <workItem from="1558379476249" duration="1189000" />
+      <workItem from="1558530776307" duration="262000" />
+      <workItem from="1558531317731" duration="1881000" />
+      <workItem from="1558533227891" duration="4829000" />
+      <workItem from="1558552345726" duration="1425000" />
+      <workItem from="1560622318120" duration="1935000" />
+      <workItem from="1561305992410" duration="8817000" />
+      <workItem from="1565794817734" duration="595000" />
+      <workItem from="1566261512967" duration="1241000" />
+      <workItem from="1567882283544" duration="596000" />
+      <workItem from="1567969872142" duration="2704000" />
+      <workItem from="1568475659442" duration="15985000" />
+      <workItem from="1568651683752" duration="3539000" />
+      <workItem from="1568668808078" duration="13068000" />
+      <workItem from="1568838656443" duration="111796000" />
+      <workItem from="1569275847153" duration="7561000" />
+      <workItem from="1569342519215" duration="1915000" />
+      <workItem from="1569366539233" duration="36993000" />
+      <workItem from="1569638280808" duration="11506000" />
+      <workItem from="1569768172060" duration="38645000" />
+      <workItem from="1569945457395" duration="76074000" />
+      <workItem from="1570554287852" duration="2085000" />
+      <workItem from="1570556411280" duration="36889000" />
+      <workItem from="1570714234902" duration="62043000" />
+      <workItem from="1571002994360" duration="25035000" />
+      <workItem from="1571081952567" duration="6140000" />
+      <workItem from="1571149118884" duration="23633000" />
+      <workItem from="1571238574536" duration="63477000" />
+      <workItem from="1571677157239" duration="27581000" />
+      <workItem from="1571775286588" duration="954000" />
+      <workItem from="1571937052524" duration="41681000" />
+      <workItem from="1572382683874" duration="3678000" />
+      <workItem from="1572387525558" duration="4777000" />
+      <workItem from="1572814423091" duration="5501000" />
+      <workItem from="1572895500431" duration="855000" />
+      <workItem from="1572912443510" duration="24197000" />
+      <workItem from="1573065158353" duration="925000" />
+      <workItem from="1573074873605" duration="35441000" />
+      <workItem from="1573252140194" duration="58854000" />
+      <workItem from="1573484945025" duration="64609000" />
+      <workItem from="1573662194151" duration="28813000" />
+      <workItem from="1573747798744" duration="20791000" />
+      <workItem from="1573850579672" duration="15373000" />
+      <workItem from="1574196762477" duration="127763000" />
+      <workItem from="1574812028323" duration="12874000" />
+      <workItem from="1575130270283" duration="43545000" />
+      <workItem from="1575244931114" duration="4718000" />
+      <workItem from="1575397307684" duration="19221000" />
+      <workItem from="1575568109566" duration="2833000" />
+      <workItem from="1575988358681" duration="838000" />
+      <workItem from="1576086964480" duration="544000" />
+      <workItem from="1576165629398" duration="9070000" />
+      <workItem from="1576182617202" duration="30316000" />
+      <workItem from="1576273703370" duration="161530000" />
+      <workItem from="1577727523651" duration="67812000" />
+      <workItem from="1578156214525" duration="30080000" />
+      <workItem from="1578417202469" duration="29570000" />
+      <workItem from="1578601840246" duration="79774000" />
+      <workItem from="1579012304889" duration="64824000" />
+      <workItem from="1579529154094" duration="5806000" />
+      <workItem from="1579538521010" duration="29558000" />
+      <workItem from="1579701178434" duration="94516000" />
+      <workItem from="1580134878059" duration="57820000" />
+      <workItem from="1580335129336" duration="51596000" />
+      <workItem from="1580734204793" duration="23175000" />
+      <workItem from="1580833266553" duration="41554000" />
+      <workItem from="1580943360860" duration="5664000" />
+      <workItem from="1581006849715" duration="1219000" />
+      <workItem from="1581027086476" duration="6995000" />
+      <workItem from="1581087266063" duration="37569000" />
+      <workItem from="1581199609054" duration="12083000" />
+      <workItem from="1581976097452" duration="24000" />
+      <workItem from="1582302233200" duration="74292000" />
+      <workItem from="1582737984758" duration="8512000" />
+      <workItem from="1582764669750" duration="6049000" />
+      <workItem from="1582825635473" duration="36908000" />
+      <workItem from="1583336523931" duration="7310000" />
+      <workItem from="1583370286021" duration="8612000" />
+      <workItem from="1583687602748" duration="23933000" />
+      <workItem from="1583786021232" duration="95610000" />
+      <workItem from="1584364985920" duration="54158000" />
+      <workItem from="1584646230312" duration="703000" />
+      <workItem from="1584658560131" duration="11642000" />
+      <workItem from="1584987740843" duration="99890000" />
+      <workItem from="1585334060863" duration="2717000" />
+      <workItem from="1586027757087" duration="14143000" />
+      <workItem from="1586192151876" duration="53072000" />
+      <workItem from="1586621108987" duration="10105000" />
+      <workItem from="1587079622943" duration="70970000" />
+      <workItem from="1588113483142" duration="5615000" />
+      <workItem from="1588191056886" duration="104684000" />
+      <workItem from="1589216293129" duration="9729000" />
+      <workItem from="1589324234344" duration="2749000" />
+      <workItem from="1589410045001" duration="923000" />
+      <workItem from="1589472313073" duration="15584000" />
+      <workItem from="1589856050891" duration="69128000" />
+      <workItem from="1590378218425" duration="74377000" />
+      <workItem from="1591046342567" duration="9598000" />
+      <workItem from="1595272166799" duration="5305000" />
+      <workItem from="1595418595760" duration="740000" />
+      <workItem from="1596025365906" duration="48076000" />
+      <workItem from="1596142506210" duration="404000" />
+      <workItem from="1596145733077" duration="9373000" />
+    </task>
+    <task id="LOCAL-00001" summary="Files supporting 2018 DB changes and Jest">
+      <created>1521912776806</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521912776806</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4146827000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="394" y="28" width="1105" height="994" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5935638" visible="true" weight="0.24742268" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.049881235" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50284785" side_tool="true" weight="0.39714625" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49605057" weight="0.23508354" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329235" />
+      <window_info id="npm" order="2" sideWeight="0.40643623" side_tool="true" weight="0.24742268" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49715215" weight="0.5616592" />
+      <window_info id="Structure" order="1" sideWeight="0.40643623" side_tool="true" visible="true" weight="0.24742268" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4940476" weight="0.5606596" />
+      <window_info id="Favorites" order="3" sideWeight="0.40643623" side_tool="true" weight="0.24742268" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4977019" visible="true" weight="0.65847" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="2" sideWeight="0.26526317" side_tool="true" weight="0.12757973" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49715215" weight="0.5616592" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.73473686" visible="true" weight="0.3517097" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.049881235" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49605057" visible="true" weight="0.2345238" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4940476" weight="0.5606596" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50284785" side_tool="true" weight="0.39714625" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329235" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4977019" visible="true" weight="0.65847" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Files supporting 2018 DB changes and Jest" />
+    <MESSAGE value="Files supporting Enzyme and Component unit testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Files supporting Enzyme and Component unit testing" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/App.js</url>
+          <line>19</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/ui/Countdown.js</url>
+          <line>14</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="65" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/routes/route_callbacks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3156">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/__mocks__/AddColorForm.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/__mocks__/ColorList.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Countdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/db07302020.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/menus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/sendMail.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/sendInvite.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/players.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/invited_org.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/invited.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/games.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="302" lean-forward="true" selection-start-line="302" selection-end-line="302" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/debug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-997">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/adaptation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/SocketIO/server.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/SocketIO/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/SocketIO/connectToTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/timer_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-130" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/timer.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/time-helpers.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/time-expires.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/testHtml.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/strength.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/socketApi.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/lib.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/containers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Whoops404.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/VideoPageList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/VideoPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-385">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/VideoDashboard.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/UserLoginForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1643">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/TournamentDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/UserGreeting.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-351">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/SocketTestRx.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#819#845#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/SocketTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/ResetPasswordForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-816">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/OwnerList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/OwnerDashboard.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/OwnerTournament.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="2" selection-start-line="39" selection-end-line="39" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/tranDBPool.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="81" column="20" lean-forward="true" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#212#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/dev-api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/sequelize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/SocketIO/server_3030.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/wildAlmondsPromise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,86 @@
+drop database wabase01;
+
+
+create database wabase01;
+use wabase01;
+
+CREATE TABLE IF NOT EXISTS users (
+    user_id INT(11) NOT NULL AUTO_INCREMENT,
+    firstname VARCHAR(255),
+    lastname VARCHAR(255),
+    username TEXT,
+    about TEXT,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    last_login DATETIME,
+    status ENUM('active','inactive'),
+    createdAt DATETIME,
+    updatedAt DATETIME,
+    resetPasswordToken VARCHAR(40),
+    resetpasswordexpires datetime,
+    PRIMARY KEY (user_id)
+    );
+
+CREATE TABLE IF NOT EXISTS videos (
+    video_id INT(11) NOT NULL AUTO_INCREMENT,
+    video_title VARCHAR(128),
+    video_link VARCHAR(255),
+    uploaded DATETIME,
+    PRIMARY KEY (video_id)
+    );
+
+    CREATE TABLE IF NOT EXISTS tournament (
+        tournament_id VARCHAR(128) NOT NULL,
+        tournament_name CHAR(40) NOT NULL,
+        tournament_description TEXT,
+        almond_count INT(11) NOT NULL,
+        square_count INT(11) NOT NULL,
+        tournament_owner INT(11),
+        tournament_status enum('active','inactive'),
+        tournament_restriction enum('private','public'),
+        expired_status enum('active','expired'),
+        expires datetime,
+        INDEX tournament_owner_ind (tournament_owner),
+        FOREIGN KEY (tournament_owner)
+            REFERENCES users (user_id)
+            ON DELETE CASCADE,
+        PRIMARY KEY (tournament_id)
+        );
+
+INSERT INTO videos VALUES(NULL, 'Hello from WildAlmonds', 'https://www.youtube.com/watch?v=nYmuEBsIy7Y&feature=youtu.be', NOW());
+INSERT INTO videos VALUES(NULL, 'What is up with the name WildAlmonds?!', 'https://youtu.be/Q4p1LYhp1WI', NOW());
+INSERT INTO videos VALUES(NULL, 'How to participate in an Event', 'https://youtu.be/ilkLyFF7MXw', NOW());
+
+
+May need to run this:
+npm install --save node-sass
+
+
+make db changes
+    ubuntu@ip-172-31-17-243:~/wildAlmonds/wildalmonds_rc1$ vi src/server/app.js
+ 	93 const options = {
+ 	   host: 'localhost',
+ 	   port: 3306,
+ 	   user: '{user here!}',
+ 	   password: '{password here!}',
+ 	   database: 'wabase01',
+ 	 };
+
+
+    ubuntu@ip-172-31-17-243:~/wildAlmonds/wildalmonds_rc1$ vi app/config/config.json
+	"username": "{user here!}",
+    	"password": "{password here!}",
+    	"database": "wabase01",
+    	"host": "localhost",
+    	"dialect": "mysql
+
+update database settings also in:
+    src/server/dev-api.js
+    src/server/dev-api.js
+    src/server/sequelize.js
+    src/server/SocketIO/server_3030.js
+    src/server/wildAlmondsPromise.js
+    src/lib/tranDBPool.js
+
+then run it!
+npm start

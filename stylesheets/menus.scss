@@ -1,0 +1,80 @@
+@import "globals";
+
+nav.main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 44px;
+  width: 100%;
+  z-index: 100;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-around;
+  color: #f1f1f1;
+
+
+  a {
+    color: ghostwhite;
+    text-align: center;
+    padding: .5em;
+    font-size: 1.5em;
+  }
+
+}
+
+div.about-menu {
+  position: fixed;
+  top: 45px;
+  left: 0;
+  height: 44px;
+  width: 100%;
+  z-index: 100;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  color: cornflowerblue;
+  list-style-type: none;
+  display: flex;
+  background-color: powderblue;
+
+  > li {
+
+    flex-grow: 1;
+
+    > a {
+      display: block;
+      width: calc(100% - 1em);
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      padding: .5em;
+    }
+  }
+}
+
+div.event-menu {
+  padding: 0px 0px 0px 0px;
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 50;
+  list-style-type: none;
+  display: flex;
+  background-color: darkblue;
+
+  > li {
+    flex-grow: 1;
+
+    > a {
+      display: block;
+      width: calc(100% - 1em);
+      text-align: center;
+      text-decoration: none;
+      color: ghostwhite;
+      padding: .5em;
+    }
+
+  }
+}

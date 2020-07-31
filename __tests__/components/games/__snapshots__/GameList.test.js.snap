@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GameList /> UI Component Rendering UI Renders Correctly 1`] = `
+<div
+  className="game-list"
+>
+  <Component
+    color="#ff4b47"
+    id="58d9caee-6ea6-4d7b-9984-65b145031979"
+    key="58d9caee-6ea6-4d7b-9984-65b145031979"
+    onRate={[Function]}
+    onRemove={[Function]}
+    rating={0}
+    timestamp="Fri Apr 15 2016 12:54:43 GMT-0700 (PDT)"
+    title="tomato"
+  />
+</div>
+`;

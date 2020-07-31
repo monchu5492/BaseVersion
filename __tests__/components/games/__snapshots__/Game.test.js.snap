@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Game /> UI Component Renders correct properties 1`] = `
+<section
+  className="game"
+>
+  <h1>
+    First Name
+  </h1>
+  <button
+    onClick={[Function]}
+  >
+    <FaTrashO />
+  </button>
+  <div
+    className="game"
+    onClick={[Function]}
+  />
+</section>
+`;

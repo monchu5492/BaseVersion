@@ -1,0 +1,14 @@
+@import "globals";
+
+div.owner-list {
+  width: 960px;
+  margin: 0px auto;
+  text-align: left;
+}
+
+div.owner-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  overflow: scroll;
+}

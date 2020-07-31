@@ -1,0 +1,71 @@
+@import "globals";
+
+div[id="send-invite"] {
+  width: min-content;
+  list-style-type: none;
+  display: inline-grid;
+  position: relative;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+
+  @media screen and (min-width: $break-sm) {
+    flex-basis: calc(50% - 2em - 4px);
+  }
+
+  @media screen and (min-width: $break-md) {
+    flex-basis: calc(33.33333% - 2em - 4px);
+  }
+
+  @media screen and (min-width: $break-lg) {
+    flex-basis: calc(25% - 2em - 4px);
+  }
+
+  @media screen and (min-width: $break-xl) {
+    flex-basis: calc(16.66666% - 2em - 4px);
+  }
+
+  div[id="invite"] {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+  }
+
+  div[id="invites"] {
+    padding: 12px;
+    margin: 12px;
+    background-color: white;
+    display: inline-grid;
+  }
+
+  button[id='help'] {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    width: 30px;
+    flex-basis: calc(12% - 1em);
+    text-align: right;
+    @include fade-bg($light, $light-grey);
+    padding: .75em;
+    border-radius: .5px;
+  }
+
+  button {
+    background-color: cornflowerblue;
+    margin: .5em;
+    padding: .25em;
+    font-size: 1.0em;
+    height: +2em;
+    width: 110px;
+    border-style: ridge;
+    border-radius: 7px;
+    display: inline;
+  }
+
+  h1 {
+    color: black;
+    font-size: 3em;
+    margin: .2em;
+    position: relative;
+  }
+}

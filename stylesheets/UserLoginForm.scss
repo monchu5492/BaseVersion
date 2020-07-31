@@ -1,0 +1,154 @@
+@import "globals";
+
+div[id="user-login"] {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  list-style-type: none;
+  display: inline-grid;
+  position: relative;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 24px;
+
+  @media screen and (min-width: $break-sm) {
+    flex-basis: calc(50% - 2em - 4px);
+  }
+
+  @media screen and (min-width: $break-md) {
+    flex-basis: calc(33.33333% - 2em - 4px);
+  }
+
+  @media screen and (min-width: $break-lg) {
+    flex-basis: calc(25% - 2em - 4px);
+  }
+
+  @media screen and (min-width: $break-xl) {
+    flex-basis: calc(16.66666% - 2em - 4px);
+  }
+
+  h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 2em;
+    color: cornflowerblue;
+    text-align: left;
+    padding: .5em;
+    flex-basis: calc(100% - 1em);
+  }
+
+  form {
+    position: relative;
+    width: 100%;
+    display: grid;
+    background-color: #ffffff;
+
+    > :first-child {
+      flex-grow: 0;
+    }
+
+    input, button {
+      background-color: lightblue;
+      color: black;
+      border: cornflowerblue;
+      padding: 6px 17px;
+      font-size: 17px;
+      border-style: ridge;
+      border-radius: 30px;
+      max-width: fit-content;
+    }
+
+    input[type="email"] {
+      margin: 8px;
+      display: block;
+      border: 1px solid #bbb;
+      color: #515151;
+      outline: 0;
+      padding: 6px;
+      font-size: 1.1em;
+      width: fit-content;
+      border-radius: 4px;
+      background: url('../src/components/ui/images/almonds/email.png') no-repeat 10px 8px;
+      background-size: 16px 16px;
+      padding-left: 32px;
+    }
+
+    input[type="password"] {
+      margin: 8px;
+      display: block;
+      border: 1px solid #bbb;
+      color: #515151;
+      outline: 0;
+      padding: 6px;
+      font-size: 1.1em;
+      width: fit-content;
+      border-radius: 4px;
+      background: url('../src/components/ui/images/almonds/698630-icon-114-lock-128.png') no-repeat 10px 8px;
+      background-size: 16px 16px;
+      padding-left: 32px;
+    }
+
+    input[type="name"] {
+      margin: 8px;
+      display: block;
+      border: 1px solid #bbb;
+      color: #515151;
+      outline: 0;
+      padding: 6px;
+      font-size: 1.1em;
+      width: fit-content;
+      border-radius: 4px;
+      background: url('../src/components/ui/images/almonds/anyPerson.png') no-repeat 10px 8px;
+      background-size: 16px 16px;
+      padding-left: 32px;
+    }
+
+    input[type="text"] {
+      background-color: white;
+      padding: 0;
+      height: +2em;
+      width: 250px;
+      border-style: double;
+    }
+
+    input[type="submit"] {
+      background-color: cornflowerblue;
+      color: whitesmoke;
+      border: black;
+      margin: .5em;
+      padding: .25em;
+      font-size: 1.2em;
+      height: +2em;
+      width: 300px;
+      border-style: ridge;
+      border-radius: 1px;
+      display: inline;
+    }
+
+    span[id="greenText"]
+    {
+      color: green;
+      font-weight: bold;
+    }
+  }
+
+  > div:last-child {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: .5em;
+  }
+
+  div.color {
+    height: 100px;
+    flex-basis: 100%;
+  }
+
+  div.time-ago {
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
+    font-family: monospace;
+    color: darken($light-grey, 40%);
+  }
+
+}

@@ -1,0 +1,18 @@
+{
+  "gamesList":{"games":[],"error":null,"loading":false},
+  "message":{"text":null, "error":null, "loading":false},
+  "ownerList":{"tournaments":[],"error":null,"loading":false},
+  "ownerReportsList":{"report":[],"error":null,"loading":false},
+  "player":{"id":null, "error":null, "loading":false},
+  "servertime":{"time":null, "error":null, "loading":false},
+  "tournamentsList":{"tournaments":[{
+    "almond_count":4,
+    "square_count":4,
+    "tournament_description":"This feature in development",
+    "tournament_id":"992b7873-b524-4045-8c67-a95c705b97f2",
+    "tournament_name":"In development",
+    "tournament_owner":1,
+    "tournament_restriction":"private",
+    "tournament_status":"active"
+  }],"error":null,"loading":false}
+}

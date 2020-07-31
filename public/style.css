@@ -1,0 +1,81 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Sans Typewriter", Helvetica, Arial;
+}
+
+html {
+    font-size: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.redText {
+    text-shadow: 1px 1px 0px #000000;
+    color: #f00;
+}
+.greenText {
+    text-shadow: 1px 1px 0px #000000;
+    color: #008000;
+}
+.blueText {
+    text-shadow: 1px 1px 0px #000000;
+    color: #0000FF;
+}
+.orangeText {
+    text-shadow: 1px 1px 0px #000000;
+    color: #FFA500;
+}
+ol, ul {
+    padding-left: 30px;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-info {
+    margin-left: 20px;
+}
+
+#container  { padding:20px; border:4px ridge #333; width:405px; height: 405px;}
+#total      { padding:20px; border:2px solid #333; width:50px;}
+
+#list-template { display:none; }
+#total-template { display:none; }
+
+#dropBox { float: left; text-align: center; width: 60px; height: 60px;
+    padding: 15px; margin: 2px; border: 3px solid #000; }
+

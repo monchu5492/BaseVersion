@@ -1,0 +1,810 @@
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+nav.main-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: cornflowerblue;
+  color: ghostwhite;
+  height: 100%;
+  width: 10%;
+  min-width: 10%; }
+  nav.main-menu a {
+    color: ghostwhite;
+    text-align: center;
+    padding: .5em;
+    font-size: 1.5em; }
+
+div.about-menu {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  background-color: cornflowerblue; }
+  div.about-menu > li {
+    flex-grow: 1; }
+    div.about-menu > li > a {
+      display: block;
+      width: calc(100% - 1em);
+      text-align: center;
+      text-decoration: none;
+      color: ghostwhite;
+      padding: .5em; }
+
+div.event-menu {
+  padding: 0px 0px 0px 0px;
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 50;
+  list-style-type: none;
+  display: flex;
+  background-color: darkblue; }
+  div.event-menu > li {
+    flex-grow: 1; }
+    div.event-menu > li > a {
+      display: block;
+      width: calc(100% - 1em);
+      text-align: center;
+      text-decoration: none;
+      color: ghostwhite;
+      padding: .5em; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+div.page {
+  display: flex;
+  justify-content: space-between;
+  height: 100%; }
+
+section > div:not(.about-menu, .event-menu, .whoops-404),
+section > section {
+  margin: 1em; }
+
+section.events {
+  flex-grow: 1;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  section.events h1 {
+    font-size: 3em;
+    color: cornflowerblue; }
+
+section.login {
+  flex-grow: 1;
+  margin: 1em;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-color: #000066; }
+  section.login h1 {
+    font-size: 3em;
+    color: cornflowerblue; }
+  section.login div.login {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    background-color: lightblue; }
+    section.login div.login > li {
+      flex-grow: 1; }
+      section.login div.login > li > a {
+        display: block;
+        width: calc(100% - 1em);
+        text-align: center;
+        text-decoration: none;
+        color: ghostwhite;
+        padding: .5em; }
+
+section.contact {
+  flex-grow: 1;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  section.contact h1 {
+    font-size: 3em;
+    color: cornflowerblue; }
+
+div.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  div.home h1 {
+    font-size: 3em;
+    color: cornflowerblue; }
+  div.home > nav {
+    background-color: cornflowerblue;
+    padding: 1em;
+    border-top: dashed .5em ghostwhite;
+    border-bottom: dashed .5em ghostwhite;
+    width: calc(100% - 2em);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    div.home > nav a {
+      font-size: 2em;
+      color: ghostwhite;
+      flex-basis: 200px; }
+
+section.about > section {
+  padding: 2em; }
+
+div.whoops-404 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  color: ghostwhite;
+  font-size: 1.5em; }
+  div.whoops-404 a {
+    color: white;
+    text-decoration: underline;
+    margin: 1em; }
+    div.whoops-404 a:hover {
+      color: yellow;
+      text-decoration: none; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+div.almond-details {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+  div.almond-details h1 {
+    color: white;
+    text-shadow: 2px 2px 7px black;
+    font-size: 2em;
+    margin: .5em; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+div.almond-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  overflow: scroll; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+div.square-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  overflow: scroll; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+div.game-details {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+  div.game-details h1 {
+    color: white;
+    text-shadow: 2px 2px 7px black;
+    font-size: 2em;
+    margin: .5em; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+section.tournament {
+  box-shadow: 3px 3px 8px 1px #b2b2b2;
+  height: 235px;
+  border: 2px solid #6fdfe5;
+  border-bottom-color: #156e73;
+  border-right-color: #156e73;
+  margin: 1em;
+  padding: 0;
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative; }
+  @media screen and (min-width: 700px) {
+    section.tournament {
+      flex-basis: calc(50% - 2em - 4px); } }
+  @media screen and (min-width: 1100px) {
+    section.tournament {
+      flex-basis: calc(33.33333% - 2em - 4px); } }
+  @media screen and (min-width: 1600px) {
+    section.tournament {
+      flex-basis: calc(25% - 2em - 4px); } }
+  @media screen and (min-width: 2000px) {
+    section.tournament {
+      flex-basis: calc(16.66666% - 2em - 4px); } }
+  section.tournament h1 {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    padding: .5em;
+    flex-basis: calc(100% - 1em); }
+  section.tournament button {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    flex-basis: calc(12% - 1em);
+    text-align: right;
+    background: white;
+    background: linear-gradient(to bottom, white 0%, #e5e5e5 100%);
+    padding: .75em;
+    border-radius: .5px; }
+  section.tournament > div:last-child {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: .5em; }
+  section.tournament div.color {
+    height: 100px;
+    flex-basis: 100%; }
+  section.tournament div.time-ago {
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
+    font-family: monospace;
+    color: #7f7f7f; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+div.tournamentx-list {
+  width: 960px;
+  margin: 0px auto;
+  text-align: left; }
+
+div.tournamentx-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  overflow: scroll; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+div.game-details {
+  color: lightgray;
+  margin: 0;
+  padding: 0;
+  height: 85%;
+  width: 120%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+  div.game-details h1 {
+    color: white;
+    text-shadow: 2px 2px 7px black;
+    font-size: 2em;
+    margin: .5em; }
+  div.game-details .wrapper {
+    width: 960px;
+    margin: 0px auto;
+    text-align: left; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+section.color {
+  box-shadow: 3px 3px 8px 1px #b2b2b2;
+  height: 235px;
+  border: 2px solid #e5e5e5;
+  border-bottom-color: #7f7f7f;
+  border-right-color: #7f7f7f;
+  margin: 1em;
+  padding: 0;
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative; }
+  @media screen and (min-width: 700px) {
+    section.color {
+      flex-basis: calc(50% - 2em - 4px); } }
+  @media screen and (min-width: 1100px) {
+    section.color {
+      flex-basis: calc(33.33333% - 2em - 4px); } }
+  @media screen and (min-width: 1600px) {
+    section.color {
+      flex-basis: calc(25% - 2em - 4px); } }
+  @media screen and (min-width: 2000px) {
+    section.color {
+      flex-basis: calc(16.66666% - 2em - 4px); } }
+  section.color h1 {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    padding: .5em;
+    flex-basis: calc(100% - 1em); }
+  section.color button {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    flex-basis: calc(12% - 1em);
+    text-align: right;
+    background: white;
+    background: linear-gradient(to bottom, white 0%, #e5e5e5 100%);
+    padding: .75em;
+    border-radius: .5px; }
+  section.color > div:last-child {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: .5em; }
+  section.color div.color {
+    height: 100px;
+    flex-basis: 100%; }
+  section.color div.time-ago {
+    position: absolute;
+    bottom: .5em;
+    right: .5em;
+    font-family: monospace;
+    color: #7f7f7f; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+div.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+div.almond-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  overflow: scroll; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+form.add-color {
+  width: 98%;
+  display: flex;
+  background-color: green; }
+  form.add-color > :first-child {
+    flex-grow: 1; }
+  form.add-color input, form.add-color button {
+    margin: .5em;
+    padding: .25em;
+    font-size: 1.2em;
+    border-radius: 5px; }
+  form.add-color input[type="email"] {
+    background-color: green;
+    padding: 0;
+    height: +2em; }
+  form.add-color button {
+    background-color: green;
+    color: white;
+    border: none; }
+
+div.login {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  background-color: lightblue; }
+  div.login > li {
+    flex-grow: 1; }
+    div.login > li > a {
+      display: block;
+      width: calc(100% - 1em);
+      text-align: center;
+      text-decoration: none;
+      color: ghostwhite;
+      padding: .5em; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+form.add-user {
+  width: 98%;
+  display: flex; }
+  form.add-user > :first-child {
+    flex-grow: 1; }
+  form.add-user input, form.add-user button {
+    margin: .5em;
+    padding: .25em;
+    font-size: 1.2em;
+    border-radius: 5px; }
+  form.add-user input[type="color"] {
+    padding: 0;
+    height: +2em; }
+  form.add-user button {
+    background-color: green;
+    color: white;
+    border: none; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+div.game-details {
+  color: lightgray;
+  margin: 0;
+  padding: 0;
+  height: 85%;
+  width: 120%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+  div.game-details h1 {
+    color: white;
+    text-shadow: 2px 2px 7px black;
+    font-size: 2em;
+    margin: .5em; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+.top-menu {
+  background-color: grey;
+  padding: 20px 50px 20px 50px;
+  user-select: none; }
+
+.top-menu > .right {
+  float: right; }
+
+.top-menu > .right > * {
+  margin-left: 5px; }
+
+.top-menu > .left {
+  float: left; }
+
+.top-menu > .left > * {
+  margin-right: 5px; }
+
+.top-menu > .left > *, .top-menu > .right > * {
+  padding: 11.4px;
+  display: inline-block;
+  text-align: center;
+  min-width: 50px; }
+
+.top-menu *:hover {
+  cursor: pointer; }
+
+.clear-fix {
+  clear: both; }
+
+.top-menu .top-menu-icon {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none; }
+
+@media screen and (max-width: 600px) {
+  .top-menu {
+    padding: 40px 20px 20px 20px;
+    max-height: 0;
+    overflow: hidden; }
+  .top-menu > .left, .top-menu > .right {
+    display: none; }
+  .top-menu-icon {
+    display: block !important; } }
+
+@media screen and (max-width: 600px) {
+  .top-menu.toggled {
+    padding: 60px 0 0 0;
+    max-height: 1500px;
+    transition: max-height 1s; }
+  .top-menu.toggled > .left {
+    border-bottom: 1px solid black;
+    margin: 15px 0 0 0; }
+  .top-menu.toggled *:not(.top-menu-lead):not(.top-menu-icon) {
+    float: none;
+    display: block !important;
+    text-align: left;
+    margin: 0; } }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white; }
+  nav h1 {
+    display: none; }
+  nav a {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    padding: .5em; }
+    nav a.selected {
+      color: #900; }
+
+html, body, div#react-container {
+  height: 100%;
+  min-height: 100%; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: linear-gradient(to bottom, white 0%, #e5e5e5 100%); }
+
+input {
+  outline: none; }
+
+div.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+div.whoops-404 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: red;
+  color: white; }
+
+
+/*# sourceMappingURL=../bundle.map*/

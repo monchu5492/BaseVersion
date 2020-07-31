@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tournament /> UI Component Renders correct properties 1`] = `
+<section
+  className="tournament"
+>
+  <h1
+    onClick={[Function]}
+  >
+    First Tourney
+  </h1>
+  <button
+    onClick={[Function]}
+  >
+    <FaTrashO />
+  </button>
+  <div
+    className="tournament"
+    onClick={[Function]}
+  />
+</section>
+`;
