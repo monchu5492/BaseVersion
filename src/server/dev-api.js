@@ -1,11 +1,10 @@
-import { Router } from 'express';
-import C from '../constants';
-import { v4 } from 'uuid';
-import { generalPromise } from './wildAlmondsPromise';
-import path from 'path';
+import { Router } from "express";
+import C from "../constants";
+import { v4 } from "uuid";
+import { generalPromise } from "./wildAlmondsPromise";
+import path from "path";
 
-const mysql = require('promise-mysql');
-
+const mysql = require("mysql2/promise");
 
 // v01 dispatch and respond works for server
 const dispatchAndRespond = (req, res, action) => {
@@ -15,39 +14,45 @@ const dispatchAndRespond = (req, res, action) => {
 
 const router = Router();
 
-router.get('/games', (req, res) => {
+router.get("/games", (req, res) => {
   let games = {};
-  mysql.createConnection({
-    host: 'localhost',
-    user: '',
-    password: '',
-    database: 'wabase01',
-  }).then((conn) => {
-    const result = conn.query('SELECT distinct game_id FROM usergame WHERE user_id="1"');
-    console.log(`Here is result${result}`);
-    conn.end();
-    return result;
-  }).then((rows) => {
-    games = rows;
-    console.log(typeof games);
-    res.json(games);
-    console.log(`Games: ${rows[0]}`);
-    // res.status(200).json(req.store.getState().games)
-    return rows;
-  });
+  mysql
+    .createConnection({
+      host: "localhost",
+      user: "TPatterson5492",
+      password: "Lunabean1^^",
+      database: "wabase01",
+    })
+    .then((conn) => {
+      const result = conn.query(
+        'SELECT distinct game_id FROM usergame WHERE user_id="1"'
+      );
+      console.log(`Here is result${result}`);
+      conn.end();
+      return result;
+    })
+    .then((rows) => {
+      games = rows;
+      console.log(typeof games);
+      res.json(games);
+      console.log(`Games: ${rows[0]}`);
+      // res.status(200).json(req.store.getState().games)
+      return rows;
+    });
 });
 
-router.post('/adduser', (req, res) => {
+router.post("/adduser", (req, res) => {
   const username = req.body.username;
   // const password = req.body.password;
   console.log(`Hello ${username}`);
-  return res.redirect('/colors');
+  return res.redirect("/colors");
 });
 
-router.get('/getState', (req, res) =>
-  res.status(200).json(req.store.getState()));
+router.get("/getState", (req, res) =>
+  res.status(200).json(req.store.getState())
+);
 
-router.get('/userIdTest', (req, res) => {
+router.get("/userIdTest", (req, res) => {
   if (req.user === undefined) {
     // this is where we will get the userId if the user has been invited
     return res.status(200).json(req.store.getState().invitedUser);
@@ -57,27 +62,30 @@ router.get('/userIdTest', (req, res) => {
   return res.status(200).send(userId);
 });
 
-router.get('/fetchUserId', (req, res) =>
+router.get("/fetchUserId", (req, res) =>
   dispatchAndRespond(req, res, {
     type: C.FETCH_INVITEDUSERID,
-    loading: 'true',
-  }));
+    loading: "true",
+  })
+);
 
-router.get('/inviteduser/:gameId/:emailId/:email', (req, res) => {
+router.get("/inviteduser/:gameId/:emailId/:email", (req, res) => {
   const gameId = JSON.stringify(req.params.gameId);
   const emailId = JSON.stringify(req.params.emailId);
   const email = JSON.stringify(req.params.email);
 
-  const invitedUser = (`SELECT invite_id FROM invitation WHERE game_id=${gameId} AND email_id=${emailId} AND email=${email}`);
+  const invitedUser = `SELECT invite_id FROM invitation WHERE game_id=${gameId} AND email_id=${emailId} AND email=${email}`;
 
   generalPromise(invitedUser).then((payload) => {
     const userId = payload;
-    console.log('~!Server Side User id~!');
+    console.log("~!Server Side User id~!");
     console.log(userId);
-    console.log('~!Server Side User id~!');
+    console.log("~!Server Side User id~!");
 
     // const printId = JSON.stringify(userId);
-    console.log(`fetch parameters are: ${gameId} ${userId[0].invite_id} ${email} `);
+    console.log(
+      `fetch parameters are: ${gameId} ${userId[0].invite_id} ${email} `
+    );
     // dispatchAndRespond(req, res, {
     //  type: C.FETCH_INVITEDUSERID_SUCCESS,
     //  id: userId[0].invite_id,
@@ -90,19 +98,21 @@ router.get('/inviteduser/:gameId/:emailId/:email', (req, res) => {
   });
 });
 
-router.post('/foundId/:id', (req, res) =>
+router.post("/foundId/:id", (req, res) =>
   dispatchAndRespond(req, res, {
     type: C.FETCH_INVITEDUSERID_SUCCESS,
     id: req.params.id,
-  }));
+  })
+);
 
-router.post('/startUser', (req, res) =>
+router.post("/startUser", (req, res) =>
   dispatchAndRespond(req, res, {
     type: C.FETCH_INVITEDUSERID,
-  }));
+  })
+);
 
-router.get('/timer',function(req,res) {
-  res.sendFile('testHtml.html', { root: './src/lib' });
+router.get("/timer", function(req, res) {
+  res.sendFile("testHtml.html", { root: "./src/lib" });
 });
 
 export default router;

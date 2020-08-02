@@ -1,21 +1,17 @@
 {
-
   "development": {
+    "username": "TPatterson5492",
 
-    "username": "",
-
-    "password": "",
+    "password": "Lunabean1^^",
 
     "database": "wabase01",
 
     "host": "127.0.0.1",
 
-    "dialect": "mysql"
-
+    "dialect": "mysql2"
   },
 
   "test": {
-
     "username": "",
 
     "password": null,
@@ -25,11 +21,9 @@
     "host": "",
 
     "dialect": "mysql"
-
   },
 
   "production": {
-
     "username": "",
 
     "password": null,
@@ -39,7 +33,5 @@
     "host": "127.0.0.1",
 
     "dialect": "mysql"
-
   }
-
 }
