@@ -755,8 +755,10 @@ nav.main-menu {
   backface-visibility: hidden;
   background-color: cornflowerblue;
   display: flex;
+  justify-content: space-around;
   color: #f1f1f1; }
   nav.main-menu a {
+    color: ghostwhite;
     text-align: center;
     padding: 0.5em;
     font-size: 1.5em; }
@@ -912,8 +914,6 @@ div.home {
   align-items: left;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: "https://media.giphy.com/media/3bzmWYZsGGSCk7xBQM/giphy.gif";
-  background-repeat: no-repeat;
   padding-left: 1.5em;
   padding-top: 45em; }
   div.home h1 {

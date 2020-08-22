@@ -14,28 +14,21 @@ const selectedStyle = {
 export const MainMenu = () => (
   <nav className="main-menu">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <Dropdown style={{ position: "relative" }}>
-      <Dropdown.Toggle
-        // variant="info"
-        id="dropdown-basic"
-        style={{
-          height: "100%",
-          position: "absolute",
-          backgroundColor: "#659DBD",
-        }}
-      >
-        <HomeIcon />
-      </Dropdown.Toggle>
-      <Dropdown.Menu>
-        <Dropdown.Item href="/">
-          <HomeIcon />
-        </Dropdown.Item>
-        <Dropdown.Item href="/about">About</Dropdown.Item>
-        <Dropdown.Item href="/owner/dashboard">Dashboard</Dropdown.Item>
-        <Dropdown.Item href="/login">Login</Dropdown.Item>
-        <Dropdown.Item href="/logout">Logout</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
+    <NavLink to="/">
+      <HomeIcon />
+    </NavLink>
+    <NavLink to="/about" activeStyle={selectedStyle}>
+      About
+    </NavLink>
+    <NavLink to="/owner/dashboard" activeStyle={selectedStyle}>
+      Dashboard
+    </NavLink>
+    <NavLink to="/login" activeStyle={selectedStyle}>
+      Login
+    </NavLink>
+    <NavLink to="/logout" activeStyle={selectedStyle}>
+      Logout
+    </NavLink>
     <button
       className="btn"
       onClick={(e) => btnRipple.ripple(e)}
