@@ -4,19 +4,19 @@ nav.main-menu {
   position: fixed;
   top: 0;
   left: 0;
-  height: 44px;
+  height: 46px;
   width: 100%;
   z-index: 100;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: cornflowerblue;
+  background-color: #8d8741;
   display: flex;
   justify-content: space-around;
-  color: #f1f1f1;
-
+  align-items: center;
+  // color: #daad86;
   a {
     color: ghostwhite;
-    text-align: center;
+    // text-align: center;
     padding: 0.5em;
     font-size: 1.5em;
   }
@@ -24,17 +24,19 @@ nav.main-menu {
 
 div.about-menu {
   position: fixed;
-  top: 45px;
+  top: 46px;
   left: 0;
   height: 44px;
   width: 100%;
   z-index: 100;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  animation: navdrop 2s;
+  // timing-function delay iteration-count direction fill-mode;
   color: cornflowerblue;
   list-style-type: none;
   display: flex;
-  background-color: powderblue;
+  background-color: #daad86;
 
   > li {
     flex-grow: 1;
@@ -44,9 +46,17 @@ div.about-menu {
       width: calc(100% - 1em);
       text-align: center;
       text-decoration: none;
-      color: black;
+      color: ghostwhite;
       padding: 0.5em;
     }
+  }
+}
+@keyframes navdrop {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 46px;
   }
 }
 
@@ -75,21 +85,21 @@ div.event-menu {
   }
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+// .dropdown {
+//   position: relative;
+//   display: inline-block;
+// }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
+// .dropdown-content {
+//   display: none;
+//   position: absolute;
+//   background-color: #f9f9f9;
+//   min-width: 160px;
+//   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+//   padding: 12px 16px;
+//   z-index: 1;
+// }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+// .dropdown:hover .dropdown-content {
+//   display: block;
+// }

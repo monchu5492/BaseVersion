@@ -80,12 +80,12 @@ div.home {
   align-items: left;
   background-repeat: no-repeat;
   background-position: center;
-  padding-left: 1.5em;
-  padding-top: 45em;
+  // padding-left: 1.5em;
+  padding-top: 50%;
 
   h1 {
     font-size: 3em;
-    color: cornflowerblue;
+    color: #8d8741;
   }
 
   > nav {
@@ -95,14 +95,14 @@ div.home {
     border-bottom: dashed 0.5em ghostwhite;
     width: calc(100% - 2em);
     display: flex;
-    // justify-content: space-around;
+    justify-content: space-around;
     flex-wrap: wrap;
 
-    // a {
-    //   font-size: 2em;
-    //   color: ghostwhite;
-    //   flex-basis: 200px;
-    // }
+    a {
+      font-size: 2em;
+      color: ghostwhite;
+      flex-basis: 200px;
+    }
   }
 }
 
@@ -437,7 +437,7 @@ button[id="create"] {
 }
 
 section.crexate {
-  width: 100%;
+  // width: 100%;
   list-style-type: none;
   display: inline;
   background-color: ghostwhite;
@@ -578,64 +578,72 @@ section.crexate {
 }
 
 section[id="wines"] {
-  * {
-    margin: 0;
-    padding: 0;
-  }
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqcpk3jZG-cRaPnLJpJTfNDfGzPitsqSj4Vw&usqp=CAU");
+  background-position: center;
+  background-size: cover;
+  color: rgb(20, 20, 20);
+  opacity: 0.7;
+  // article {
+  //   color: rgb(255, 206, 168);
+  // }
+  // * {
+  //   margin: 0;
+  //   padding: 0;
+  // }
 
-  header,
-  section,
-  footer,
-  aside,
-  nav,
-  article,
-  figure,
-  figcaption {
-    display: block;
-  }
-  body {
-    color: #666666;
-    background-color: #f9f8f6;
-    background-position: center;
-    font-family: Georgia, Times, serif;
-    line-height: 1.4em;
-    margin: 0px;
-  }
-  .wrapper {
-    width: 940px;
-    margin: 20px auto 20px auto;
-    border: 2px solid #000000;
-    background-color: #ffffff;
-  }
-  header {
-    height: 160px;
-  }
-  h1 {
-    text-indent: -9999px;
-    width: 940px;
-    height: 130px;
-    margin: 0px;
-  }
-  nav,
-  footer {
-    clear: both;
-    color: #ffffff;
-  }
-  figure {
-    float: left;
-    width: 290px;
-    height: 220px;
-    margin: 20px;
-    border: 1px solid #eeeeee;
-    background-image: url("../src/components/ui/images/02.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  // header,
+  // section,
+  // footer,
+  // aside,
+  // nav,
+  // article,
+  // figure,
+  // figcaption {
+  //   display: block;
+  // }
+  // body {
+  //   color: #666666;
+  //   background-color: #f9f8f6;
+  //   background-position: center;
+  //   font-family: Georgia, Times, serif;
+  //   line-height: 1.4em;
+  //   margin: 0px;
+  // }
+  // .wrapper {
+  //   width: 940px;
+  //   margin: 20px auto 20px auto;
+  //   border: 2px solid #000000;
+  //   background-color: #ffffff;
+  // }
+  // header {
+  //   height: 160px;
+  // }
+  // h1 {
+  //   text-indent: -9999px;
+  //   width: 940px;
+  //   height: 130px;
+  //   margin: 0px;
+  // }
+  // nav,
+  // footer {
+  //   clear: both;
+  //   color: #ffffff;
+  // }
+  // figure {
+  //   float: left;
+  //   width: 290px;
+  //   height: 220px;
+  //   margin: 20px;
+  //   border: 1px solid #eeeeee;
+  //   background-image: url("../src/components/ui/images/02.jpg");
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  // }
 
-  figcaption {
-    padding-top: 0.25em;
-    font-size: 90%;
-    text-align: left;
-    font-family: Colfax-Bold, Helvetica, Arial;
-  }
+  // figcaption {
+  //   padding-top: 0.25em;
+  //   font-size: 90%;
+  //   text-align: left;
+  //   font-family: Colfax-Bold, Helvetica, Arial;
+  // }
 }

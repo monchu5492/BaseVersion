@@ -6,9 +6,18 @@ import btnRipple from "../stylesheets/btn.js";
 import "../stylesheets/btn.scss";
 import Dropdown from "react-bootstrap/Dropdown";
 
-const selectedStyle = {
+const selectedStyle1 = {
   backgroundColor: "white",
-  color: "cornflowerblue",
+  color: "#8d8741",
+  borderRadius: "20px",
+};
+
+const selectedStyle2 = {
+  backgroundColor: "white",
+  color: "#daad86",
+  height: "44px",
+  textAlign: "center",
+  borderRadius: "10px",
 };
 
 export const MainMenu = () => (
@@ -17,23 +26,19 @@ export const MainMenu = () => (
     <NavLink to="/">
       <HomeIcon />
     </NavLink>
-    <NavLink to="/about" activeStyle={selectedStyle}>
+    <NavLink to="/about" activeStyle={selectedStyle1}>
       About
     </NavLink>
-    <NavLink to="/owner/dashboard" activeStyle={selectedStyle}>
+    <NavLink to="/owner/dashboard" activeStyle={selectedStyle1}>
       Dashboard
     </NavLink>
-    <NavLink to="/login" activeStyle={selectedStyle}>
+    <NavLink to="/login" activeStyle={selectedStyle1}>
       Login
     </NavLink>
-    <NavLink to="/logout" activeStyle={selectedStyle}>
+    <NavLink to="/logout" activeStyle={selectedStyle1}>
       Logout
     </NavLink>
-    <button
-      className="btn"
-      onClick={(e) => btnRipple.ripple(e)}
-      style={{ marginLeft: "56em" }}
-    >
+    <button className="btn" onClick={(e) => btnRipple.ripple(e)}>
       <UserGreetingId />
     </button>
   </nav>
@@ -42,27 +47,27 @@ export const MainMenu = () => (
 export const AboutMenu = ({ match }) => (
   <div className="about-menu">
     <li>
-      <NavLink to="/about" style={match.isExact && selectedStyle}>
+      <NavLink to="/about" style={match.isExact && selectedStyle2}>
         [Company]
       </NavLink>
     </li>
     <li>
-      <NavLink to="/about/help" activeStyle={selectedStyle}>
+      <NavLink to="/about/help" activeStyle={selectedStyle2}>
         [How to play]
       </NavLink>
     </li>
     <li>
-      <NavLink to="/about/media" activeStyle={selectedStyle}>
+      <NavLink to="/about/media" activeStyle={selectedStyle2}>
         [Media]
       </NavLink>
     </li>
     <li>
-      <NavLink to="/about/services" activeStyle={selectedStyle}>
+      <NavLink to="/about/services" activeStyle={selectedStyle2}>
         [Services]
       </NavLink>
     </li>
     <li>
-      <NavLink to="/about/terms" activeStyle={selectedStyle}>
+      <NavLink to="/about/terms" activeStyle={selectedStyle2}>
         [Terms & Conditions]
       </NavLink>
     </li>
