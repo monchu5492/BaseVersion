@@ -1656,6 +1656,10 @@ object-assign
 
 /*! ../../lib/strength */
 
+/*!****************************************!*\
+  !*** ./src/components/ui/Carousel.jsx ***!
+  \****************************************/
+
 /*!*************************************!*\
   !*** ./src/components/ui/Clock.jsx ***!
   \*************************************/
@@ -1793,6 +1797,8 @@ object-assign
 /*! ./menus */
 
 /*! ../stylesheets/pages.scss */
+
+/*! ./components/ui/Carousel.jsx */
 
 /*!****************************!*\
   !*** ./src/store/index.js ***!
