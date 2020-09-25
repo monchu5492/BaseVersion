@@ -910,8 +910,8 @@ div.home {
     font-size: 3em;
     color: #8d8741;
     margin-bottom: 1.5em; }
-  div.home #crsl-itm {
-    background-color: grey; }
+  div.home .carousel-inner {
+    background-color: gray; }
   div.home #tp-h2 {
     bottom: 0; }
   div.home #tp-h3-center {
