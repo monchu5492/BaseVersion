@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
+import { NavLink } from 'react-router-dom';
 import '../../../stylesheets/PlayerName.scss';
+
+const selectedStyle = {
+  backgroundColor: 'white',
+  color: 'cornflowerblue',
+};
 
 function findPlayerName (onFetchPlayerName) {
   onFetchPlayerName();
@@ -9,10 +15,17 @@ function findPlayerName (onFetchPlayerName) {
 class UserGreeting extends Component {
   state = {
     isLoggedIn: false,
-    firstname: 'Welcome',
-    lastname: 'Guest!',
+    firstname: '',
+    lastname: '',
     onFetchPlayerName: this.props.onFetchPlayerName,
   };
+
+  componentWillReceiveProps(props) {
+    this.setState({
+      firstname: props.player.firstname,
+      lastname: props.player.lastname,
+    });
+  }
 
   componentDidMount() {
     setTimeout(() => {
@@ -42,9 +55,13 @@ class UserGreeting extends Component {
 
   render() {
     return (
-      this.state.isLoggedIn ?
-        <div className="player-name">{this.props.player.firstname} {this.props.player.lastname}</div> :
-        <div>Hello Guest</div>
+      this.props.player === 'Not authenticated' ?
+        <NavLink to="/login" activeStyle={selectedStyle}>Login</NavLink>
+        :
+        <div>
+        <NavLink to="/logout" activeStyle={selectedStyle}>Logout</NavLink>
+        {this.state.firstname} {this.state.lastname}
+        </div>
     );
   }
 }

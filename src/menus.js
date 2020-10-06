@@ -13,8 +13,6 @@ export const MainMenu = () =>
     <NavLink to="/"><HomeIcon /></NavLink>
     <NavLink to="/about" activeStyle={selectedStyle}>About</NavLink>
     <NavLink to="/owner/dashboard" activeStyle={selectedStyle}>Dashboard</NavLink>
-    <NavLink to="/login" activeStyle={selectedStyle} >Login</NavLink>
-    <NavLink to="/logout" activeStyle={selectedStyle}>Logout</NavLink>
     <UserGreetingId />
   </nav>);
 
