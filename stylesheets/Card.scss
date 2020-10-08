@@ -1,0 +1,104 @@
+.card {
+  margin: 10px 10px;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  display: grid;
+  perspective: 700px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+.card.front.how {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://placeimg.com/1080/500/animals");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h4#card-1-h4 {
+  mix-blend-mode: difference;
+  text-shadow: 0px 0px 0.5em white;
+}
+
+p#card-1-bk-p {
+  margin: 1em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+p#card-1-bk-p-2 {
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+div#card-1-button {
+  text-align: center;
+  margin-top: 2.2em;
+  margin-bottom: 1.5em;
+}
+
+h4#card-2-h4 {
+  margin: 1em;
+  margin-top: 1em;
+  text-align: center;
+}
+img#card-2-img {
+  height: 67%;
+}
+h5#card-2-h5 {
+  margin: 1em;
+  margin-top: 3em;
+}
+
+img#card-3-img {
+  height: 40%;
+}
+
+h4#card-3-h4 {
+  margin: 1em;
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+p#card-3-fnt-p {
+  text-align: center;
+}
+
+p#card-3-p {
+  margin: 1em;
+  margin-top: 6em;
+  margin-bottom: 2em;
+}
+
+div#card-3-btn {
+  margin-top: 5em;
+}

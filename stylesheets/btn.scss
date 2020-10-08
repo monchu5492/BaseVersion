@@ -8,9 +8,15 @@
   min-width: 10vw;
   font-size: 20px;
   font-family: sans-serif;
-  color: black;
 }
 
 .btn {
   background-repeat: no-repeat;
+}
+
+.btnn {
+  display: inline-block;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: cornflowerblue;
 }

@@ -1,36 +1,39 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import '../../../stylesheets/PlayerName.scss';
+import "../../../stylesheets/PlayerName.scss";
+import player from "../../store/reducers";
 
-function findPlayerName (onFetchPlayerName) {
+function findPlayerName(onFetchPlayerName) {
   onFetchPlayerName();
 }
 
 class UserGreeting extends Component {
   state = {
     isLoggedIn: false,
-    firstname: 'Welcome',
-    lastname: 'Guest!',
+    firstname: "Welcome",
+    lastname: "Guest!",
     onFetchPlayerName: this.props.onFetchPlayerName,
   };
 
   componentDidMount() {
     setTimeout(() => {
-    this._asyncRequest = findPlayerName(
-      this.state.onFetchPlayerName
-    );
-    if (this.props.player) {
-      this.setState({isLoggedIn: true});
-    }
+      this._asyncRequest = findPlayerName(this.state.onFetchPlayerName);
+      if (!this.props.player.firstname) {
+        this.setState({ isLoggedIn: false });
+      }
+      this.setState({ isLoggedIn: true });
     }, 250);
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.isLoggedIn !== this.state.isLoggedIn) {
-      console.log(`\n **\nisLoggedIn ${prevState.isLoggedIn} has changed: ${this.state.isLoggedIn}\n\n*****`);
-      if (this.props.player) {
-        this.setState({isLoggedIn: true});
+      console.log(
+        `\n **\nisLoggedIn ${prevState.isLoggedIn} has changed: ${this.state.isLoggedIn}\n\n*****`
+      );
+      if (!this.props.player.firstname) {
+        this.setState({ isLoggedIn: false });
       }
+      this.setState({ isLoggedIn: true });
     }
   }
 
@@ -41,11 +44,13 @@ class UserGreeting extends Component {
   }
 
   render() {
-    return (
-      this.state.isLoggedIn ?
-        <div className="player-name">{this.props.player.firstname} {this.props.player.lastname}</div> :
-        <div>Hello Guest</div>
-    );
+    return this.state.isLoggedIn ? (
+      <div className="player-name">
+        {console.log("THIS PLAYER", this.props.player.firstname)}
+        {this.props.player.firstname} {this.props.player.lastname}
+      </div>
+    ) : null;
+    // <div>Hello Guest</div>
   }
 }
 
@@ -55,7 +60,7 @@ UserGreeting.propTypes = {
 };
 
 UserGreeting.defaultProps = {
-  onFetchPlayerName: f => f,
+  onFetchPlayerName: (f) => f,
   // player: 'Guest',
 };
 export default UserGreeting;

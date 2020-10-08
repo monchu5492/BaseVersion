@@ -9,11 +9,10 @@ nav.main-menu {
   z-index: 100;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: #8d8741;
+  background-color: cornflowerblue;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  // color: #daad86;
   a {
     color: ghostwhite;
     // text-align: center;
@@ -36,7 +35,7 @@ div.about-menu {
   color: cornflowerblue;
   list-style-type: none;
   display: flex;
-  background-color: #daad86;
+  background-color: #afffad;
 
   > li {
     flex-grow: 1;

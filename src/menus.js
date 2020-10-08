@@ -5,20 +5,25 @@ import "../stylesheets/menus.scss";
 import btnRipple from "../stylesheets/btn.js";
 import "../stylesheets/btn.scss";
 import Dropdown from "react-bootstrap/Dropdown";
+import PropTypes from "prop-types";
 
 const selectedStyle1 = {
   backgroundColor: "white",
-  color: "#8d8741",
+  color: "cornflowerblue",
   borderRadius: "20px",
 };
 
 const selectedStyle2 = {
   backgroundColor: "white",
-  color: "#daad86",
+  color: "#93ce91",
   height: "44px",
   textAlign: "center",
   borderRadius: "10px",
 };
+
+function findPlayerName(onFetchPlayerName) {
+  onFetchPlayerName();
+}
 
 export const MainMenu = () => (
   <nav className="main-menu">
@@ -48,28 +53,37 @@ export const AboutMenu = ({ match }) => (
   <div className="about-menu">
     <li>
       <NavLink to="/about" style={match.isExact && selectedStyle2}>
-        [Company]
+        Company
       </NavLink>
     </li>
     <li>
       <NavLink to="/about/help" activeStyle={selectedStyle2}>
-        [How to play]
+        How to play
       </NavLink>
     </li>
     <li>
       <NavLink to="/about/media" activeStyle={selectedStyle2}>
-        [Media]
+        Media
       </NavLink>
     </li>
     <li>
       <NavLink to="/about/services" activeStyle={selectedStyle2}>
-        [Services]
+        FAQ's | Services
       </NavLink>
     </li>
     <li>
       <NavLink to="/about/terms" activeStyle={selectedStyle2}>
-        [Terms & Conditions]
+        <em>Terms & Conditions</em>
       </NavLink>
     </li>
   </div>
 );
+
+MainMenu.propTypes = {
+  player: PropTypes.array,
+  onFetchPlayerName: PropTypes.func,
+};
+
+MainMenu.defaultProps = {
+  onFetchPlayerName: (f) => f,
+};

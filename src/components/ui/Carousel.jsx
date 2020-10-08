@@ -8,131 +8,124 @@ class Carousel extends Component {
   render = () => {
     return (
       <div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-interval="10000">
-            <div class="d-block w-100">
-              <h4>Creation:</h4>
-              <strong>Create an account at:</strong>{" "}
-              <a href="https://wildalmonds.com/signup">Signup</a>
-              <br />
-              Once you have an account, the Create Tournament option is
-              available from the Owner Page. Currently, the Create page allows
-              you a free 4x4x4 Survey: 4 Almonds 4 Squares and 4 invites. We can
-              easily create you a custom Survey outside the Demo restrictions.
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous"
+        ></link>
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"
+        ></script>
+        <div className="container-fluid caro-container">
+          <div className="row">
+            <div className="col-4">
+              <h2 id="faq-h2-2">
+                What types of surveys work well on WildAlmonds?
+              </h2>
+              <p>
+                Anywhere you need to get feedback on a select number of options
+                or items is a great choice! WildAlmonds really shine when there
+                are multiple good options available. Here are a few
+                inspirational ideas:
+              </p>
             </div>
-          </div>
-          <div class="carousel-item" data-interval="2000">
-            <div class="d-block w-100">
-              <h4>Invitation:</h4>
-              Now that you have completed the Creation phase, you are ready to
-              send your invitations to your participants. In the Owner
-              Dashboard, you will see your Tournament board. Click or touch the
-              Dashboard button. This displays your voting results as well as
-              your invite cards. Invites are sent via Email from the
-              support@wildalmonds.com account. Please have your invitees search
-              for a message from this sender. Fill that out for a new user and
-              hit the <strong>Send It!</strong> button.
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-block w-100">
-              <h4>Participation:</h4>
-              Your participants receive within the email their own unique link
-              to your WildAlmonds Event. Clicking the link sends them to our
-              site where they are greeted with your survey owner and the
-              description summary of what the survey is about. There, they
-              choose the Accept button to link to the Event page. This page
-              allows your participant to rank their choices via Almonds for your
-              Squares. This is done via touchscreen or mouse by dragging the
-              Almonds above the Square and releasing it. Once all picks are
-              completed, the participant receives the Lock Picks button. More
-              detail are available here at{" "}
-              <a href="https://wildalmonds.com/about/help">How to Play</a>
+            <div className="col-8">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="1"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="2"
+                  ></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      class="d-block w-100"
+                      src="https://placeimg.com/1080/500/animals"
+                      alt="First slide"
+                    ></img>
+                    <div class="Caro-div d-none d-md-block">
+                      <h5>· Ordering dinner for a large team.</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100"
+                      src="https://placeimg.com/1080/500/arch"
+                      alt="Second slide"
+                    ></img>
+                    <div class="Caro-div d-none d-md-block">
+                      <h5>· Choosing a name for a team</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100"
+                      src="https://placeimg.com/1080/500/nature"
+                      alt="Third slide"
+                    ></img>
+                    <div class="Caro-div d-none d-md-block">
+                      <h5>· Making team decisions quickly</h5>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleInterval"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleInterval"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     );
   };
 }
 
 export default Carousel;
-
-{
-  /* 
-   <div
-      id="carouselExampleInterval"
-      class="carousel slide"
-      data-ride="carousel"
-      >
-
-  <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="10000">
-      <div class="d-block w-100">
-      <h4>Creation:</h4>
-                <strong>Create an account at:</strong>{" "}
-                <a href="https://wildalmonds.com/signup">Signup</a>
-                <br />
-                Once you have an account, the Create Tournament option is
-                available from the Owner Page. Currently, the Create page allows
-                you a free 4x4x4 Survey: 4 Almonds 4 Squares and 4 invites. We
-                can easily create you a custom Survey outside the Demo
-                restrictions.
-    </div>
-    <div class="carousel-item" data-interval="2000">
-      <div class="d-block w-100">
-      <h4>Invitation:</h4>
-                Now that you have completed the Creation phase, you are ready to
-                send your invitations to your participants. In the Owner
-                Dashboard, you will see your Tournament board. Click or touch
-                the Dashboard button. This displays your voting results as well
-                as your invite cards. Invites are sent via Email from the
-                support@wildalmonds.com account. Please have your invitees
-                search for a message from this sender. Fill that out for a new
-                user and hit the <strong>Send It!</strong> button.
-    </div>
-    <div class="carousel-item">
-      <div class="d-block w-100">
-      <h4>Participation:</h4>
-                Your participants receive within the email their own unique link
-                to your WildAlmonds Event. Clicking the link sends them to our
-                site where they are greeted with your survey owner and the
-                description summary of what the survey is about. There, they
-                choose the Accept button to link to the Event page. This page
-                allows your participant to rank their choices via Almonds for
-                your Squares. This is done via touchscreen or mouse by dragging
-                the Almonds above the Square and releasing it. Once all picks
-                are completed, the participant receives the Lock Picks button.
-                More detail are available here at{" "}
-                <a href="https://wildalmonds.com/about/help">How to Play</a>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div> */
-}

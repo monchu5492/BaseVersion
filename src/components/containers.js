@@ -10,6 +10,7 @@ import UserLoginForm from "./ui/UserLoginForm.jsx";
 import UserGreeting from "./ui/UserGreeting.jsx";
 import VideoDashboard from "./ui/VideoDashboard.jsx";
 import VideoPageList from "./ui/VideoPageList.jsx";
+import MainMenu from "../menus";
 import {
   addUser,
   checkAuth,
@@ -24,6 +25,7 @@ import {
   fetchOwnerTournaments,
   fetchLogout,
 } from "../actions";
+import { dispatch } from "rxjs/internal/observable/pairs";
 
 export const OwnerDashboardId = connect(
   (state) => ({
@@ -57,7 +59,7 @@ export const UserGreetingId = connect(
       dispatch(fetchPlayerName());
     },
   })
-)(UserGreeting);
+)(UserGreeting, MainMenu);
 
 export const OwnerTournaments = connect(
   (state) => ({
@@ -111,6 +113,17 @@ export const UserLogin = connect(null, (dispatch) => ({
     dispatch(setMessage(message));
   },
 }))(UserLoginForm);
+
+// export const LoggedIn = connect(
+//   (state) => ({
+//     loggedIn: state.loggedIn,
+//   }),
+//   (dispatch) => ({
+//     onLoggedin() {
+//       dispatch(true);
+//     },
+//   })
+// )(MainMenu);
 
 export const VideoDashboardId = connect(
   (state) => ({

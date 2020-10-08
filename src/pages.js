@@ -2,6 +2,8 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { MainMenu, AboutMenu } from "./menus";
 import "../stylesheets/pages.scss";
+import "../stylesheets/Card.scss";
+import Card from "./components/ui/Card.jsx";
 import Carousel from "./components/ui/Carousel.jsx";
 
 import {
@@ -24,21 +26,32 @@ const PageTemplate = ({ children }) => (
 export const Home = () => (
   <PageTemplate>
     <div className="home">
-      <h1>WildAlmonds</h1>
+      <div id="home-top-h1">
+        <h1>WildAlmonds</h1>
+        <div className="container-fluid home-h1-container">
+          <div className="row">
+            <div className="col">
+              <h2 id="home-h2">WildAlmonds for Wines</h2>
+            </div>
+            <div className="col">
+              <h2 id="home-h2">
+                {" "}
+                Why start with a stack ranked voting system?
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
       <section id="wines">
         <div className="container-fluid" id="opn">
           <div className="row">
             <div className="col">
-              <h2>WildAlmonds for Wines</h2>
               <p id="tp-h2-p">
                 We connect the customers of Washington State wines to highly
                 engaging product rating and sales events. WildAlmonds is a
                 platform built around an easy to use Drag and Drop functionality
                 centered around a stacked rank voting system.
               </p>
-            </div>
-            <div className="col">
-              <h3> Why start with a stack ranked voting system?</h3>
               <p>
                 Companies should be fun, flexible, and sustainable. Often, teams
                 are faced with multiple options rather than a single choice.
@@ -55,27 +68,21 @@ export const Home = () => (
           <h3> So how do I use it?</h3>
           <p>The solution works on 4 simple core concepts:</p>
         </div>
-        {
-          ///////* begining code for Carousel page animation *///////
-          /*<div className="container-fluid">
-          <div className="row">
-            <div className="col">
-              <Carousel />
-            </div>
-          </div>
-                </div> */
-        }
         <div className="container-fluid">
           <div className="row">
-            <div className="col">
-              <h4>Creation:</h4>
-              <strong>Create an account at:</strong>{" "}
-              <a href="https://wildalmonds.com/signup">Signup</a>
-              <br />
-              Once you have an account, the Create Tournament option is
-              available from the Owner Page. Currently, the Create page allows
-              you a free 4x4x4 Survey: 4 Almonds 4 Squares and 4 invites. We can
-              easily create you a custom Survey outside the Demo restrictions.
+            <div className="col" id="create-col-1">
+              <div className="create-1">
+                <h4>Creation:</h4>
+                Once you have an account, the Create Tournament option is
+                available from the Owner Page. Currently, the Create page allows
+                you a free 4x4x4 Survey: 4 Almonds 4 Squares and 4 invites. We
+                can easily create you a custom Survey outside the Demo
+                restrictions.
+              </div>
+              <div className="create-2">
+                <strong>Create an account at:</strong>{" "}
+                <a href="https://wildalmonds.com/signup">Signup</a>
+              </div>
             </div>
             <div className="col">
               <h4>Invitation:</h4>
@@ -234,16 +241,20 @@ export const Contact = () => (
 
 export const Services = () => (
   <section className="services">
-    <br />
-    <br />
-    <br />
-    <br />
-    <h2>Our Services</h2>
-    <p>
-      Contact wildalmondz@gmail.com to setup a demo or setup an account and give
-      it a spin. We can customize based on the existing framework to meet your
-      needs at a reasonably negotiated cost.
-    </p>
+    <div className="faq-h1">
+      <h1>FAQ's</h1>
+    </div>
+    <div className="container-fluid" id="faq-h2-1">
+      <h2>How is WildAlmonds different?</h2>
+      <p>
+        WildAlmonds is a points based survey system rather than traditional vote
+        for one option or ratings of several distinct items where only 51% of
+        the respondents need to be happy. We also have interactive squares that
+        provide much greater detail regarding the options being ranked.
+      </p>
+    </div>
+    <Carousel />
+    <Card />
   </section>
 );
 
@@ -617,71 +628,129 @@ export const Terms = () => (
   </section>
 );
 
+// const wildimg = require("../src/images/wineryroad.jpg");
+
 export const Company = () => (
   <section className="company">
+    <div className="container-fluid" id="open">
+      <div className="row">
+        <div className="col-4" id="wldalmds">
+          <h1>WildAlmonds</h1>
+          <p>
+            WildAlmonds is a platform built around an easy to use Drag and Drop
+            functionality centered around a stacked rank voting system.
+          </p>
+        </div>
+        <div className="col-8" id="WRimg"></div>
+      </div>
+    </div>
+    <div className="container-sm" id="why3">
+      <h3> Why start with a stack ranked voting system?</h3>
+      <p>
+        Companies should be fun, flexible, and sustainable. Often, teams are
+        faced with multiple options rather than a single choice. Using the
+        wisdom of the crowd philosophy (what would please the most individuals
+        or what most believe to be the most likely) greatly improves the final
+        outcome. Basically, we all need to have access to an easy experience
+        that gets us to a what matters decision quickly.
+      </p>
+    </div>
     <br />
-    <br />
-    <br />
-    <br />
-    <h1>WildAlmonds</h1>
-    WildAlmonds is a platform built around an easy to use Drag and Drop
-    functionality centered around a stacked rank voting system.
-    <br />
-    <h3> Why start with a stack ranked voting system?</h3>
-    Companies should be fun, flexible, and sustainable. Often, teams are faced
-    with multiple options rather than a single choice. Using the wisdom of the
-    crowd philosophy (what would please the most individuals or what most
-    believe to be the most likely) greatly improves the final outcome.
-    Basically, we all need to have access to an easy experience that gets us to
-    a what matters decision quickly.
-    <h3> So how do I use it?</h3>
-    The solution works on 4 simple core concepts:
-    <h4>Creation:</h4>
-    <strong>Create an account at:</strong>{" "}
-    <a href="https://wildalmonds.com/signup">Signup</a>
-    <br />
-    Once you have an account, the Create Tournament option is available from the
-    Owner Page. Currently, the Create page allows you a free 4x4x4 Survey: 4
-    Almonds 4 Squares and 4 invites. We can easily create you a custom Survey
-    outside the Demo restrictions.
-    <h4>Invitation:</h4>
-    Now that you have completed the Creation phase, you are ready to send your
-    invitations to your participants. In the Owner Dashboard, you will see your
-    Tournament board. Click or touch the Dashboard button. This displays your
-    voting results as well as your invite cards. Invites are sent via Email from
-    the wildalmonds@yahoo.com account. Please have your invitees search for a
-    message from this sender. Fill that out for a new user and hit the{" "}
-    <strong>Send It!</strong> button.
-    <h4>Participation:</h4>
-    Your participants receive within the email their own unique link to your
-    WildAlmonds Event. Clicking the link sends them to our site where they are
-    greeted with your survey owner and the description summary of what the
-    survey is about. There, they choose the Accept button to link to the Event
-    page. This page allows your participant to rank their choices via Almonds
-    for your Squares. This is done via touchscreen or mouse by dragging the
-    Almonds above the Square and releasing it. Once all picks are completed, the
-    participant receives the Lock Picks button. More detail are available here
-    at <a href="https://wildalmonds.com/about/help">How to Play</a>
-    <h4>Aggregation:</h4>
-    Each Survey request sent appears in your Event report. We do not show which
-    picks your users individually selected, we total those up. You will see when
-    you sent the request, when the user last Accepted, and when the picks where
-    Locked. For best results, please strongly encourage your participants to
-    Lock their picks. As they change those picks, your results will change in
-    your summarized totals.
-    <h4>That is it!</h4>
-    We have just walked through the solution end-to-end. It is simply a matter
-    of inviting more participants to the Event via the Owner Panel. As results
-    come in, you may see that you have a passionate base that supports a single
-    option, but the Total for another is highest. This is your wisdom of the
-    crowd selection and it deserves a consideration. The more invites you send,
-    the better this reporting will be.
-    <h4>Reminder</h4>
-    We can easily customize the number of Invitations, Almonds and Squares for
-    you. We need your help to grow the site. Please do give us your feedback,
-    invite us to your Events, and let us earn your trust and partnership.
-    Contact us at wildalmondz@gmail.com. We would love to hear from you. Or,
-    setup a tournament with your own account and ask us through the application.
+    <div className="container-fluid" id="howh3">
+      <h3> So how do I use it?</h3>
+      <p>The solution works on 4 simple core concepts:</p>
+    </div>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col crtwrap">
+          <div className="card-flip">
+            <div className="cfront">
+              <h4>Creation:</h4>
+              <strong>Create an account at:</strong>{" "}
+              <a href="https://wildalmonds.com/signup">Signup</a>
+            </div>
+            <div className="cback">
+              <p>
+                Once you have an account, the Create Tournament option is
+                available from the Owner Page. Currently, the Create page allows
+                you a free 4x4x4 Survey: 4 Almonds 4 Squares and 4 invites. We
+                can easily create you a custom Survey outside the Demo
+                restrictions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col" id="4sqr">
+          <h4>Invitation:</h4>
+          <div id="sqr">
+            Now that you have completed the Creation phase, you are ready to
+            send your invitations to your participants. In the Owner Dashboard,
+            you will see your Tournament board. Click or touch the Dashboard
+            button. This displays your voting results as well as your invite
+            cards. Invites are sent via Email from the wildalmonds@yahoo.com
+            account. Please have your invitees search for a message from this
+            sender. Fill that out for a new user and hit the{" "}
+            <strong>Send It!</strong> button.
+          </div>
+        </div>
+        <div className="w-100" style={{ marginBottom: "2em" }}></div>
+        <div className="col" id="4sqr">
+          <h4>Participation:</h4>
+          <div id="sqr">
+            Your participants receive within the email their own unique link to
+            your WildAlmonds Event. Clicking the link sends them to our site
+            where they are greeted with your survey owner and the description
+            summary of what the survey is about. There, they choose the Accept
+            button to link to the Event page. This page allows your participant
+            to rank their choices via Almonds for your Squares. This is done via
+            touchscreen or mouse by dragging the Almonds above the Square and
+            releasing it. Once all picks are completed, the participant receives
+            the Lock Picks button. More detail are available here at{" "}
+            <a href="https://wildalmonds.com/about/help">How to Play</a>
+          </div>
+        </div>
+        <div className="col">
+          <h4 style={{ marginBottom: "2em" }}>Aggregation:</h4>
+          <div>
+            Each Survey request sent appears in your Event report. We do not
+            show which picks your users individually selected, we total those
+            up. You will see when you sent the request, when the user last
+            Accepted, and when the picks where Locked. For best results, please
+            strongly encourage your participants to Lock their picks. As they
+            change those picks, your results will change in your summarized
+            totals.
+          </div>
+        </div>
+      </div>
+      <div className="container-fluid" id="btm">
+        <h4>That is it!</h4>
+        <div className="row">
+          <div className="col-8" id="btmimg"></div>
+          <p className="col-4">
+            We have just walked through the solution end-to-end. It is simply a
+            matter of inviting more participants to the Event via the Owner
+            Panel. As results come in, you may see that you have a passionate
+            base that supports a single option, but the Total for another is
+            highest. This is your wisdom of the crowd selection and it deserves
+            a consideration. The more invites you send, the better this
+            reporting will be.
+          </p>
+        </div>
+      </div>
+      <div id="rmndr">
+        <h2>
+          <b>Reminder</b>
+        </h2>
+        <div class="alert alert-success" role="alert">
+          We can easily customize the number of Invitations, Almonds and Squares
+          for you. We need your help to grow the site. Please do give us your
+          feedback, invite us to your Events, and let us earn your trust and
+          partnership. Contact us at wildalmondz@gmail.com. We would love to
+          hear from you. Or, setup a tournament with your own account and ask us
+          through the application.
+        </div>
+      </div>
+    </div>
   </section>
 );
 
