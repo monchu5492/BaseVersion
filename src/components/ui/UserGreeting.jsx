@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import "../../../stylesheets/PlayerName.scss";
 import player from "../../store/reducers";
+import { NavLink } from "react-router-dom";
 
 function findPlayerName(onFetchPlayerName) {
   onFetchPlayerName();
@@ -10,18 +11,24 @@ function findPlayerName(onFetchPlayerName) {
 class UserGreeting extends Component {
   state = {
     isLoggedIn: false,
-    firstname: "Welcome",
-    lastname: "Guest!",
+    firstname: " ",
+    lastname: " ",
     onFetchPlayerName: this.props.onFetchPlayerName,
   };
+
+  componentWillReceiveProps(props) {
+    this.setState({
+      firstname: props.player.firstname,
+      lastname: props.player.lastname,
+    });
+  }
 
   componentDidMount() {
     setTimeout(() => {
       this._asyncRequest = findPlayerName(this.state.onFetchPlayerName);
-      if (!this.props.player.firstname) {
-        this.setState({ isLoggedIn: false });
+      if (this.props.player) {
+        this.setState({ isLoggedIn: true });
       }
-      this.setState({ isLoggedIn: true });
     }, 250);
   }
 
@@ -30,10 +37,9 @@ class UserGreeting extends Component {
       console.log(
         `\n **\nisLoggedIn ${prevState.isLoggedIn} has changed: ${this.state.isLoggedIn}\n\n*****`
       );
-      if (!this.props.player.firstname) {
-        this.setState({ isLoggedIn: false });
+      if (this.props.player) {
+        this.setState({ isLoggedIn: true });
       }
-      this.setState({ isLoggedIn: true });
     }
   }
 
@@ -44,13 +50,14 @@ class UserGreeting extends Component {
   }
 
   render() {
-    return this.state.isLoggedIn ? (
-      <div className="player-name">
-        {console.log("THIS PLAYER", this.props.player.firstname)}
-        {this.props.player.firstname} {this.props.player.lastname}
+    return this.props.player === "Not authenticated" ? (
+      <NavLink to="/login">Login</NavLink>
+    ) : (
+      <div>
+        <NavLink to="/logout">Logout</NavLink>
+        {this.state.firstname} {this.state.lastname}
       </div>
-    ) : null;
-    // <div>Hello Guest</div>
+    );
   }
 }
 

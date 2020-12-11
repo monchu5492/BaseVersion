@@ -5,6 +5,7 @@ import "../stylesheets/pages.scss";
 import "../stylesheets/Card.scss";
 import Card from "./components/ui/Card.jsx";
 import Carousel from "./components/ui/Carousel.jsx";
+import BlogContainer from "./components/ui/BlogContainer.jsx";
 
 import {
   Forgot,
@@ -14,6 +15,7 @@ import {
   OwnerDashboardId,
   VideoDashboardId,
   UserLogin,
+  BlogDashboard,
 } from "./components/containers";
 
 const PageTemplate = ({ children }) => (
@@ -628,6 +630,12 @@ export const Terms = () => (
   </section>
 );
 
+export const Blog = () => (
+  <div>
+    <BlogDashboard />
+  </div>
+);
+
 // const wildimg = require("../src/images/wineryroad.jpg");
 
 export const Company = () => (
@@ -811,7 +819,9 @@ export const About = ({ match }) => (
       <Route path="/about/services" component={Services} />
       <Route path="/about/media" component={Media} />
       <Route path="/about/terms" component={Terms} />
+      <Route path="/about/blogs" component={Blog} />
       <Route path="/about/videos" component={Video} />
+      {/* <Route path="about/founder" component={Founder} /> */}
     </section>
   </PageTemplate>
 );

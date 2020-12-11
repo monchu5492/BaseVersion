@@ -1,3 +1,9 @@
+/*!****************************!*\
+  !*** ./app/models/blog.js ***!
+  \****************************/
+
+/*! no static exports found */
+
 /*!**************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js ***!
   \**************************************************************************/
@@ -16,411 +22,9 @@
   !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
   \*********************************************************************************/
 
-/*!***************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/contains.js ***!
-  \***************************************************************/
-
-/*!****************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js ***!
-  \****************************************************************************/
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getClippingRect.js ***!
-  \**********************************************************************/
-
-/*! ../enums.js */
-
-/*! ./getViewportRect.js */
-
-/*! ./getDocumentRect.js */
-
-/*! ./listScrollParents.js */
-
-/*! ./getOffsetParent.js */
-
-/*! ./getDocumentElement.js */
-
-/*! ./getComputedStyle.js */
-
-/*! ./instanceOf.js */
-
-/*! ./getBoundingClientRect.js */
-
-/*! ./getParentNode.js */
-
-/*! ./contains.js */
-
-/*! ./getNodeName.js */
-
-/*! ../utils/rectToClientRect.js */
-
-/*!***********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.js ***!
-  \***********************************************************************/
-
-/*! ./getNodeScroll.js */
-
-/*! ./getWindowScrollBarX.js */
-
-/*! ./isScrollParent.js */
-
-/*!***********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getComputedStyle.js ***!
-  \***********************************************************************/
-
-/*! ./getWindow.js */
-
-/*!*************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getDocumentElement.js ***!
-  \*************************************************************************/
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getDocumentRect.js ***!
-  \**********************************************************************/
-
-/*! ./getWindowScroll.js */
-
-/*!***************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getHTMLElementScroll.js ***!
-  \***************************************************************************/
-
-/*!********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getLayoutRect.js ***!
-  \********************************************************************/
-
-/*!******************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getNodeName.js ***!
-  \******************************************************************/
-
-/*!********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getNodeScroll.js ***!
-  \********************************************************************/
-
-/*! ./getHTMLElementScroll.js */
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js ***!
-  \**********************************************************************/
-
-/*! ./isTableElement.js */
-
-/*!********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getParentNode.js ***!
-  \********************************************************************/
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getScrollParent.js ***!
-  \**********************************************************************/
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getViewportRect.js ***!
-  \**********************************************************************/
-
-/*!****************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getWindow.js ***!
-  \****************************************************************/
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getWindowScroll.js ***!
-  \**********************************************************************/
-
-/*!**************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getWindowScrollBarX.js ***!
-  \**************************************************************************/
-
-/*!*****************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/instanceOf.js ***!
-  \*****************************************************************/
-
-/*! exports provided: isElement, isHTMLElement */
-
-/*!*********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/isScrollParent.js ***!
-  \*********************************************************************/
-
-/*!*********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/isTableElement.js ***!
-  \*********************************************************************/
-
-/*!************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/listScrollParents.js ***!
-  \************************************************************************/
-
-/*! ./getScrollParent.js */
-
-/*!**************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/enums.js ***!
-  \**************************************************/
-
-/*! exports provided: top, bottom, right, left, auto, basePlacements, start, end, clippingParents, viewport, popper, reference, variationPlacements, placements, beforeRead, read, afterRead, beforeMain, main, afterMain, beforeWrite, write, afterWrite, modifierPhases */
-
-/*!**************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/index.js ***!
-  \**************************************************/
-
-/*! exports provided: top, bottom, right, left, auto, basePlacements, start, end, clippingParents, viewport, popper, reference, variationPlacements, placements, beforeRead, read, afterRead, beforeMain, main, afterMain, beforeWrite, write, afterWrite, modifierPhases, popperGenerator, createPopper, detectOverflow */
-
-/*! ./dom-utils/getCompositeRect.js */
-
-/*! ./dom-utils/getLayoutRect.js */
-
-/*! ./dom-utils/listScrollParents.js */
-
-/*! ./dom-utils/getOffsetParent.js */
-
-/*! ./dom-utils/getComputedStyle.js */
-
-/*! ./utils/orderModifiers.js */
-
-/*! ./utils/debounce.js */
-
-/*! ./utils/validateModifiers.js */
-
-/*! ./utils/uniqueBy.js */
-
-/*! ./utils/getBasePlacement.js */
-
-/*! ./utils/mergeByName.js */
-
-/*! ./utils/detectOverflow.js */
-
-/*! ./dom-utils/instanceOf.js */
-
-/*! ./enums.js */
-
-/*!************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/arrow.js ***!
-  \************************************************************/
-
-/*! ../utils/getBasePlacement.js */
-
-/*! ../dom-utils/getLayoutRect.js */
-
-/*! ../dom-utils/contains.js */
-
-/*! ../dom-utils/getOffsetParent.js */
-
-/*! ../utils/getMainAxisFromPlacement.js */
-
-/*! ../utils/within.js */
-
-/*! ../utils/mergePaddingObject.js */
-
-/*! ../utils/expandToHashMap.js */
-
-/*! ../dom-utils/instanceOf.js */
-
-/*!********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/computeStyles.js ***!
-  \********************************************************************/
-
-/*! exports provided: mapToStyles, default */
-
-/*! ../dom-utils/getWindow.js */
-
-/*! ../dom-utils/getDocumentElement.js */
-
-/*! ../dom-utils/getComputedStyle.js */
-
-/*!*********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/eventListeners.js ***!
-  \*********************************************************************/
-
-/*!***********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/flip.js ***!
-  \***********************************************************/
-
-/*! ../utils/getOppositePlacement.js */
-
-/*! ../utils/getOppositeVariationPlacement.js */
-
-/*! ../utils/detectOverflow.js */
-
-/*! ../utils/computeAutoPlacement.js */
-
-/*! ../utils/getVariation.js */
-
-/*!***********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/hide.js ***!
-  \***********************************************************/
-
-/*!*************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/offset.js ***!
-  \*************************************************************/
-
-/*! exports provided: distanceAndSkiddingToXY, default */
-
-/*!********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/popperOffsets.js ***!
-  \********************************************************************/
-
-/*! ../utils/computeOffsets.js */
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/preventOverflow.js ***!
-  \**********************************************************************/
-
-/*! ../utils/getAltAxis.js */
-
-/*! ../utils/getFreshSideObject.js */
-
-/*!********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/popper-base.js ***!
-  \********************************************************/
-
-/*! exports provided: createPopper, popperGenerator, detectOverflow */
-
-/*! ./index.js */
-
-/*!***********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/computeAutoPlacement.js ***!
-  \***********************************************************************/
-
-/*! ./getVariation.js */
-
-/*! ./detectOverflow.js */
-
-/*! ./getBasePlacement.js */
-
-/*!*****************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/computeOffsets.js ***!
-  \*****************************************************************/
-
-/*! ./getMainAxisFromPlacement.js */
-
-/*!***********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/debounce.js ***!
-  \***********************************************************/
-
-/*!*****************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/detectOverflow.js ***!
-  \*****************************************************************/
-
-/*! ../dom-utils/getBoundingClientRect.js */
-
-/*! ../dom-utils/getClippingRect.js */
-
-/*! ./computeOffsets.js */
-
-/*! ./rectToClientRect.js */
-
-/*! ./mergePaddingObject.js */
-
-/*! ./expandToHashMap.js */
-
-/*!******************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/expandToHashMap.js ***!
-  \******************************************************************/
-
-/*!*********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/format.js ***!
-  \*********************************************************/
-
-/*!*************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getAltAxis.js ***!
-  \*************************************************************/
-
-/*!*******************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getBasePlacement.js ***!
-  \*******************************************************************/
-
-/*!*********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getFreshSideObject.js ***!
-  \*********************************************************************/
-
-/*!***************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getMainAxisFromPlacement.js ***!
-  \***************************************************************************/
-
-/*!***********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getOppositePlacement.js ***!
-  \***********************************************************************/
-
-/*!********************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getOppositeVariationPlacement.js ***!
-  \********************************************************************************/
-
-/*!***************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getVariation.js ***!
-  \***************************************************************/
-
-/*!**************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/mergeByName.js ***!
-  \**************************************************************/
-
-/*!*********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/mergePaddingObject.js ***!
-  \*********************************************************************/
-
-/*! ./getFreshSideObject.js */
-
-/*!*****************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/orderModifiers.js ***!
-  \*****************************************************************/
-
-/*!*******************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/rectToClientRect.js ***!
-  \*******************************************************************/
-
-/*!***********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/uniqueBy.js ***!
-  \***********************************************************/
-
-/*!********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/validateModifiers.js ***!
-  \********************************************************************/
-
-/*! ./format.js */
-
-/*!*********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/within.js ***!
-  \*********************************************************/
-
-/*!***********************************************************!*\
-  !*** ./node_modules/@restart/hooks/esm/useCallbackRef.js ***!
-  \***********************************************************/
-
-/*! react */
-
-/*!************************************************************!*\
-  !*** ./node_modules/@restart/hooks/esm/useCommittedRef.js ***!
-  \************************************************************/
-
-/*!*************************************************************!*\
-  !*** ./node_modules/@restart/hooks/esm/useEventCallback.js ***!
-  \*************************************************************/
-
-/*! ./useCommittedRef */
-
-/*!***********************************************************!*\
-  !*** ./node_modules/@restart/hooks/esm/useForceUpdate.js ***!
-  \***********************************************************/
-
-/*!**********************************************************!*\
-  !*** ./node_modules/@restart/hooks/esm/useMergedRefs.js ***!
-  \**********************************************************/
-
-/*! exports provided: mergeRefs, default */
-
-/*!*******************************************************!*\
-  !*** ./node_modules/@restart/hooks/esm/useMounted.js ***!
-  \*******************************************************/
-
-/*!********************************************************!*\
-  !*** ./node_modules/@restart/hooks/esm/usePrevious.js ***!
-  \********************************************************/
-
-/*!*********************************************************!*\
-  !*** ./node_modules/@restart/hooks/esm/useSafeState.js ***!
-  \*********************************************************/
-
-/*! ./useMounted */
-
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
   \*************************************/
-
-/*! no static exports found */
 
 /*! ./lib/axios */
 
@@ -596,64 +200,6 @@
   !*** ./node_modules/bootstrap/dist/css/bootstrap.min.css ***!
   \***********************************************************/
 
-/*!******************************************!*\
-  !*** ./node_modules/classnames/index.js ***!
-  \******************************************/
-
-/*!
-  Copyright (c) 2017 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-
-/*!**********************************************************!*\
-  !*** ./node_modules/dom-helpers/esm/addEventListener.js ***!
-  \**********************************************************/
-
-/*! exports provided: optionsSupported, onceSupported, default */
-
-/*! ./canUseDOM */
-
-/*!**************************************************!*\
-  !*** ./node_modules/dom-helpers/esm/camelize.js ***!
-  \**************************************************/
-
-/*!***************************************************!*\
-  !*** ./node_modules/dom-helpers/esm/canUseDOM.js ***!
-  \***************************************************/
-
-/*!**************************************************!*\
-  !*** ./node_modules/dom-helpers/esm/contains.js ***!
-  \**************************************************/
-
-/*!**************************************************!*\
-  !*** ./node_modules/dom-helpers/esm/hasClass.js ***!
-  \**************************************************/
-
-/*!************************************************!*\
-  !*** ./node_modules/dom-helpers/esm/listen.js ***!
-  \************************************************/
-
-/*! ./addEventListener */
-
-/*! ./removeEventListener */
-
-/*!*************************************************!*\
-  !*** ./node_modules/dom-helpers/esm/matches.js ***!
-  \*************************************************/
-
-/*!*******************************************************!*\
-  !*** ./node_modules/dom-helpers/esm/ownerDocument.js ***!
-  \*******************************************************/
-
-/*!**********************************************************!*\
-  !*** ./node_modules/dom-helpers/esm/querySelectorAll.js ***!
-  \**********************************************************/
-
-/*!*************************************************************!*\
-  !*** ./node_modules/dom-helpers/esm/removeEventListener.js ***!
-  \*************************************************************/
-
 /*!*********************************************!*\
   !*** ./node_modules/history/esm/history.js ***!
   \*********************************************/
@@ -758,10 +304,6 @@ object-assign
 @license MIT
 */
 
-/*!****************************************************************!*\
-  !*** ./node_modules/prop-types-extra/lib/isRequiredForA11y.js ***!
-  \****************************************************************/
-
 /*!***************************************************!*\
   !*** ./node_modules/prop-types/checkPropTypes.js ***!
   \***************************************************/
@@ -788,123 +330,11 @@ object-assign
   !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
   \*************************************************************/
 
-/*!****************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/Button.js ***!
-  \****************************************************/
-
-/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */
-
-/*! classnames */
-
-/*! ./ThemeProvider */
-
-/*! ./SafeAnchor */
-
-/*!******************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/Dropdown.js ***!
-  \******************************************************/
-
-/*! react-overlays/Dropdown */
-
-/*! uncontrollable */
-
-/*! @restart/hooks/useEventCallback */
-
-/*! ./DropdownItem */
-
-/*! ./DropdownMenu */
-
-/*! ./DropdownToggle */
-
-/*! ./SelectableContext */
-
-/*! ./createWithBsPrefix */
-
-/*!**********************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/DropdownItem.js ***!
-  \**********************************************************/
-
-/*! ./NavContext */
-
-/*!**********************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/DropdownMenu.js ***!
-  \**********************************************************/
-
-/*! react-overlays/DropdownMenu */
-
-/*! @restart/hooks/useMergedRefs */
-
-/*! ./NavbarContext */
-
-/*! ./useWrappedRefWithWarning */
-
-/*! ./usePopperMarginModifiers */
-
-/*!************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/DropdownToggle.js ***!
-  \************************************************************/
-
-/*! prop-types-extra/lib/isRequiredForA11y */
-
-/*! react-overlays/DropdownToggle */
-
-/*! ./Button */
-
-/*!********************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/NavContext.js ***!
-  \********************************************************/
-
-/*!***********************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/NavbarContext.js ***!
-  \***********************************************************/
-
-/*!********************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/SafeAnchor.js ***!
-  \********************************************************/
-
-/*! ./createChainedFunction */
-
-/*!***************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/SelectableContext.js ***!
-  \***************************************************************/
-
-/*! exports provided: makeEventKey, default */
-
-/*!***********************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/ThemeProvider.js ***!
-  \***********************************************************/
-
-/*! exports provided: useBootstrapPrefix, createBootstrapComponent, ThemeConsumer, default */
-
-/*!*******************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/createChainedFunction.js ***!
-  \*******************************************************************/
-
-/*!****************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/createWithBsPrefix.js ***!
-  \****************************************************************/
-
-/*! dom-helpers/camelize */
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/usePopperMarginModifiers.js ***!
-  \**********************************************************************/
-
-/*! dom-helpers/hasClass */
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/useWrappedRefWithWarning.js ***!
-  \**********************************************************************/
-
-/*! invariant */
-
-/*!************************************************************************!*\
-  !*** ./node_modules/react-bootstrap/node_modules/invariant/browser.js ***!
-  \************************************************************************/
-
 /*!*******************************************************!*\
   !*** ./node_modules/react-confirm-alert/lib/index.js ***!
   \*******************************************************/
+
+/*! react */
 
 /*! prop-types */
 
@@ -978,122 +408,6 @@ object-assign
 
 /*! ./cjs/react-is.development.js */
 
-/*!****************************************************************************!*\
-  !*** ./node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js ***!
-  \****************************************************************************/
-
-/*! exports provided: polyfill */
-
-/*!*****************************************************!*\
-  !*** ./node_modules/react-overlays/esm/Dropdown.js ***!
-  \*****************************************************/
-
-/*! dom-helpers/matches */
-
-/*! dom-helpers/querySelectorAll */
-
-/*! @restart/hooks/usePrevious */
-
-/*! @restart/hooks/useCallbackRef */
-
-/*! @restart/hooks/useForceUpdate */
-
-/*! ./DropdownContext */
-
-/*!************************************************************!*\
-  !*** ./node_modules/react-overlays/esm/DropdownContext.js ***!
-  \************************************************************/
-
-/*!*********************************************************!*\
-  !*** ./node_modules/react-overlays/esm/DropdownMenu.js ***!
-  \*********************************************************/
-
-/*! exports provided: useDropdownMenu, default */
-
-/*! ./usePopper */
-
-/*! ./useRootClose */
-
-/*! ./mergeOptionsWithPopperConfig */
-
-/*!***********************************************************!*\
-  !*** ./node_modules/react-overlays/esm/DropdownToggle.js ***!
-  \***********************************************************/
-
-/*! exports provided: useDropdownToggle, default */
-
-/*!*************************************************************************!*\
-  !*** ./node_modules/react-overlays/esm/mergeOptionsWithPopperConfig.js ***!
-  \*************************************************************************/
-
-/*! exports provided: toModifierMap, toModifierArray, default */
-
-/*!**********************************************************!*\
-  !*** ./node_modules/react-overlays/esm/ownerDocument.js ***!
-  \**********************************************************/
-
-/*! dom-helpers/ownerDocument */
-
-/*! ./safeFindDOMNode */
-
-/*!***************************************************!*\
-  !*** ./node_modules/react-overlays/esm/popper.js ***!
-  \***************************************************/
-
-/*! exports provided: createPopper, placements */
-
-/*! @popperjs/core/lib/modifiers/arrow */
-
-/*! @popperjs/core/lib/modifiers/computeStyles */
-
-/*! @popperjs/core/lib/modifiers/eventListeners */
-
-/*! @popperjs/core/lib/modifiers/flip */
-
-/*! @popperjs/core/lib/modifiers/hide */
-
-/*! @popperjs/core/lib/modifiers/offset */
-
-/*! @popperjs/core/lib/modifiers/popperOffsets */
-
-/*! @popperjs/core/lib/modifiers/preventOverflow */
-
-/*! @popperjs/core/lib/enums */
-
-/*! @popperjs/core/lib/popper-base */
-
-/*!************************************************************!*\
-  !*** ./node_modules/react-overlays/esm/safeFindDOMNode.js ***!
-  \************************************************************/
-
-/*!******************************************************!*\
-  !*** ./node_modules/react-overlays/esm/usePopper.js ***!
-  \******************************************************/
-
-/*! @restart/hooks/useSafeState */
-
-/*! ./popper */
-
-/*!*********************************************************!*\
-  !*** ./node_modules/react-overlays/esm/useRootClose.js ***!
-  \*********************************************************/
-
-/*! dom-helpers/contains */
-
-/*! dom-helpers/listen */
-
-/*! warning */
-
-/*! ./ownerDocument */
-
-/*!****************************************************************************************!*\
-  !*** ./node_modules/react-overlays/node_modules/@babel/runtime/helpers/esm/extends.js ***!
-  \****************************************************************************************/
-
-/*!*************************************************************************************************************!*\
-  !*** ./node_modules/react-overlays/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
-  \*************************************************************************************************************/
-
 /*!************************************************************!*\
   !*** ./node_modules/react-redux/es/components/Provider.js ***!
   \************************************************************/
@@ -1112,7 +426,11 @@ object-assign
 
 /*! @babel/runtime/helpers/esm/assertThisInitialized */
 
+/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */
+
 /*! hoist-non-react-statics */
+
+/*! invariant */
 
 /*! ../utils/Subscription */
 
@@ -1229,6 +547,8 @@ object-assign
 /*!***********************************************************!*\
   !*** ./node_modules/react-router-dom/es/BrowserRouter.js ***!
   \***********************************************************/
+
+/*! warning */
 
 /*! history */
 
@@ -1638,50 +958,6 @@ object-assign
   !*** ./node_modules/tiny-warning/dist/tiny-warning.esm.js ***!
   \************************************************************/
 
-/*!*************************************************!*\
-  !*** ./node_modules/uncontrollable/esm/hook.js ***!
-  \*************************************************/
-
-/*! exports provided: useUncontrolledProp, default */
-
-/*!**************************************************!*\
-  !*** ./node_modules/uncontrollable/esm/index.js ***!
-  \**************************************************/
-
-/*! exports provided: useUncontrolled, useUncontrolledProp, uncontrollable */
-
-/*! ./hook */
-
-/*! ./uncontrollable */
-
-/*!***********************************************************!*\
-  !*** ./node_modules/uncontrollable/esm/uncontrollable.js ***!
-  \***********************************************************/
-
-/*! react-lifecycles-compat */
-
-/*!**************************************************!*\
-  !*** ./node_modules/uncontrollable/esm/utils.js ***!
-  \**************************************************/
-
-/*! exports provided: uncontrolledPropTypes, isProp, defaultKey, canAcceptRef */
-
-/*!****************************************************************************************!*\
-  !*** ./node_modules/uncontrollable/node_modules/@babel/runtime/helpers/esm/extends.js ***!
-  \****************************************************************************************/
-
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/uncontrollable/node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
-  \**********************************************************************************************/
-
-/*!*************************************************************************************************************!*\
-  !*** ./node_modules/uncontrollable/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
-  \*************************************************************************************************************/
-
-/*!***********************************************************************!*\
-  !*** ./node_modules/uncontrollable/node_modules/invariant/browser.js ***!
-  \***********************************************************************/
-
 /*!*******************************************!*\
   !*** ./node_modules/value-equal/index.js ***!
   \*******************************************/
@@ -1748,6 +1024,12 @@ object-assign
 
 /*! ./ui/VideoPageList.jsx */
 
+/*! ./ui/BlogContainer.jsx */
+
+/*! ./ui/BlogDisplay.jsx */
+
+/*! ./ui/BlogList.jsx */
+
 /*! ../menus */
 
 /*! ../actions */
@@ -1765,6 +1047,30 @@ object-assign
 /*! ../containers */
 
 /*! ../../lib/strength */
+
+/*!*********************************************!*\
+  !*** ./src/components/ui/BlogContainer.jsx ***!
+  \*********************************************/
+
+/*! ./BlogForm.jsx */
+
+/*! react-router */
+
+/*!*******************************************!*\
+  !*** ./src/components/ui/BlogDisplay.jsx ***!
+  \*******************************************/
+
+/*! ../../../app/models/blog */
+
+/*!****************************************!*\
+  !*** ./src/components/ui/BlogForm.jsx ***!
+  \****************************************/
+
+/*!****************************************!*\
+  !*** ./src/components/ui/BlogList.jsx ***!
+  \****************************************/
+
+/*! ./BlogDisplay.jsx */
 
 /*!************************************!*\
   !*** ./src/components/ui/Card.jsx ***!
@@ -1793,8 +1099,6 @@ object-assign
 /*!**************************************!*\
   !*** ./src/components/ui/Logout.jsx ***!
   \**************************************/
-
-/*! react-router */
 
 /*! ../../store/index */
 
@@ -1904,8 +1208,6 @@ object-assign
 
 /*! ../stylesheets/btn.scss */
 
-/*! react-bootstrap/Dropdown */
-
 /*!**********************!*\
   !*** ./src/pages.js ***!
   \**********************/
@@ -1919,6 +1221,8 @@ object-assign
 /*! ./components/ui/Card.jsx */
 
 /*! ./components/ui/Carousel.jsx */
+
+/*! ./components/ui/BlogContainer.jsx */
 
 /*!****************************!*\
   !*** ./src/store/index.js ***!

@@ -10,11 +10,15 @@ import UserLoginForm from "./ui/UserLoginForm.jsx";
 import UserGreeting from "./ui/UserGreeting.jsx";
 import VideoDashboard from "./ui/VideoDashboard.jsx";
 import VideoPageList from "./ui/VideoPageList.jsx";
+import BlogContainer from "./ui/BlogContainer.jsx";
+import BlogDisplay from "./ui/BlogDisplay.jsx";
+import BlogList from "./ui/BlogList.jsx";
 import MainMenu from "../menus";
 import {
   addUser,
   checkAuth,
   checkForVideo,
+  checkForBlog,
   login,
   resetPassword,
   forgotPassword,
@@ -81,6 +85,10 @@ export const Videos = connect((state) => ({
   videos: state.videosList.videos,
 }))(VideoPageList);
 
+export const Blogs = connect((state) => ({
+  blogs: state.blogsList.blogs,
+}))(BlogList);
+
 export const NewUser = connect(null, (dispatch) => ({
   onNewUser(email, password) {
     dispatch(addUser(email, password));
@@ -135,6 +143,17 @@ export const VideoDashboardId = connect(
     },
   })
 )(VideoDashboard);
+
+export const BlogDashboard = connect(
+  (state) => ({
+    blogs: state.blogsList.blogs,
+  }),
+  (dispatch) => ({
+    onFetch() {
+      dispatch(checkForBlog());
+    },
+  })
+)(BlogContainer);
 
 export const MessageBoardId = connect(
   (state) => ({

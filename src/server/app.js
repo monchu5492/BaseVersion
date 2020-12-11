@@ -32,6 +32,7 @@ const fileAssets = express.static(path.join(__dirname, "../../dist/assets"));
 const adaptation = require("./adaptation");
 const invited = require("./invited");
 const players = require("./players");
+const blogs = require("./blogs");
 
 const usersRouter = require("../../routes/users");
 
@@ -205,6 +206,7 @@ app.use("/adaptation", adaptation);
 app.use("/apidev", apidev);
 app.use("/invited", invited);
 app.use("/players", players);
+app.use("/blogs", blogs);
 
 const PORT = 4500;
 

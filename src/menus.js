@@ -4,44 +4,22 @@ import { UserGreetingId } from "./components/containers";
 import "../stylesheets/menus.scss";
 import btnRipple from "../stylesheets/btn.js";
 import "../stylesheets/btn.scss";
-import Dropdown from "react-bootstrap/Dropdown";
-import PropTypes from "prop-types";
 
-const selectedStyle1 = {
+const selectedStyle = {
   backgroundColor: "white",
   color: "cornflowerblue",
-  borderRadius: "20px",
 };
-
-const selectedStyle2 = {
-  backgroundColor: "white",
-  color: "#93ce91",
-  height: "44px",
-  textAlign: "center",
-  borderRadius: "10px",
-};
-
-function findPlayerName(onFetchPlayerName) {
-  onFetchPlayerName();
-}
 
 export const MainMenu = () => (
   <nav className="main-menu">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <NavLink to="/">
       <HomeIcon />
     </NavLink>
-    <NavLink to="/about" activeStyle={selectedStyle1}>
+    <NavLink to="/about" activeStyle={selectedStyle}>
       About
     </NavLink>
-    <NavLink to="/owner/dashboard" activeStyle={selectedStyle1}>
+    <NavLink to="/owner/dashboard" activeStyle={selectedStyle}>
       Dashboard
-    </NavLink>
-    <NavLink to="/login" activeStyle={selectedStyle1}>
-      Login
-    </NavLink>
-    <NavLink to="/logout" activeStyle={selectedStyle1}>
-      Logout
     </NavLink>
     <button className="btn" onClick={(e) => btnRipple.ripple(e)}>
       <UserGreetingId />
@@ -52,38 +30,34 @@ export const MainMenu = () => (
 export const AboutMenu = ({ match }) => (
   <div className="about-menu">
     <li>
-      <NavLink to="/about" style={match.isExact && selectedStyle2}>
+      <NavLink to="/about" style={match.isExact && selectedStyle}>
         Company
       </NavLink>
     </li>
     <li>
-      <NavLink to="/about/help" activeStyle={selectedStyle2}>
+      <NavLink to="/about/help" activeStyle={selectedStyle}>
         How to play
       </NavLink>
     </li>
     <li>
-      <NavLink to="/about/media" activeStyle={selectedStyle2}>
+      <NavLink to="/about/media" activeStyle={selectedStyle}>
         Media
       </NavLink>
     </li>
     <li>
-      <NavLink to="/about/services" activeStyle={selectedStyle2}>
+      <NavLink to="/about/services" activeStyle={selectedStyle}>
         FAQ's | Services
       </NavLink>
     </li>
     <li>
-      <NavLink to="/about/terms" activeStyle={selectedStyle2}>
+      <NavLink to="/about/terms" activeStyle={selectedStyle}>
         <em>Terms & Conditions</em>
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/about/blogs" activeStyle={selectedStyle}>
+        <em>Blog</em>
       </NavLink>
     </li>
   </div>
 );
-
-MainMenu.propTypes = {
-  player: PropTypes.array,
-  onFetchPlayerName: PropTypes.func,
-};
-
-MainMenu.defaultProps = {
-  onFetchPlayerName: (f) => f,
-};
