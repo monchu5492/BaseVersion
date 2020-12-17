@@ -1,35 +1,44 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import '../../../stylesheets/PlayerName.scss';
+import "../../../stylesheets/PlayerName.scss";
+import player from "../../store/reducers";
+import { NavLink } from "react-router-dom";
 
-function findPlayerName (onFetchPlayerName) {
+function findPlayerName(onFetchPlayerName) {
   onFetchPlayerName();
 }
 
 class UserGreeting extends Component {
   state = {
     isLoggedIn: false,
-    firstname: 'Welcome',
-    lastname: 'Guest!',
+    firstname: " ",
+    lastname: " ",
     onFetchPlayerName: this.props.onFetchPlayerName,
   };
 
+  componentWillReceiveProps(props) {
+    this.setState({
+      firstname: props.player.firstname,
+      lastname: props.player.lastname,
+    });
+  }
+
   componentDidMount() {
     setTimeout(() => {
-    this._asyncRequest = findPlayerName(
-      this.state.onFetchPlayerName
-    );
-    if (this.props.player) {
-      this.setState({isLoggedIn: true});
-    }
+      this._asyncRequest = findPlayerName(this.state.onFetchPlayerName);
+      if (this.props.player) {
+        this.setState({ isLoggedIn: true });
+      }
     }, 250);
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.isLoggedIn !== this.state.isLoggedIn) {
-      console.log(`\n **\nisLoggedIn ${prevState.isLoggedIn} has changed: ${this.state.isLoggedIn}\n\n*****`);
+      console.log(
+        `\n **\nisLoggedIn ${prevState.isLoggedIn} has changed: ${this.state.isLoggedIn}\n\n*****`
+      );
       if (this.props.player) {
-        this.setState({isLoggedIn: true});
+        this.setState({ isLoggedIn: true });
       }
     }
   }
@@ -41,10 +50,13 @@ class UserGreeting extends Component {
   }
 
   render() {
-    return (
-      this.state.isLoggedIn ?
-        <div className="player-name">{this.props.player.firstname} {this.props.player.lastname}</div> :
-        <div>Hello Guest</div>
+    return this.props.player === "Not authenticated" ? (
+      <NavLink to="/login">Login</NavLink>
+    ) : (
+      <div>
+        <NavLink to="/logout">Logout</NavLink>
+        {this.state.firstname} {this.state.lastname}
+      </div>
     );
   }
 }
@@ -55,7 +67,7 @@ UserGreeting.propTypes = {
 };
 
 UserGreeting.defaultProps = {
-  onFetchPlayerName: f => f,
+  onFetchPlayerName: (f) => f,
   // player: 'Guest',
 };
 export default UserGreeting;

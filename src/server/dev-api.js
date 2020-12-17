@@ -4,7 +4,11 @@ import { v4 } from "uuid";
 import { generalPromise } from "./wildAlmondsPromise";
 import path from "path";
 
+<<<<<<< HEAD
 const mysql = require("mysql2/promise");
+=======
+const mysql = require("promise-mysql");
+>>>>>>> new_branch2
 
 // v01 dispatch and respond works for server
 const dispatchAndRespond = (req, res, action) => {
@@ -19,7 +23,11 @@ router.get("/games", (req, res) => {
   mysql
     .createConnection({
       host: "localhost",
+<<<<<<< HEAD
       user: "TPatterson5492",
+=======
+      user: "root",
+>>>>>>> new_branch2
       password: "Lunabean1^^",
       database: "wabase01",
     })

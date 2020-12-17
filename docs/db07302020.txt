@@ -21,6 +21,12 @@ CREATE TABLE IF NOT EXISTS users (
     PRIMARY KEY (user_id)
     );
 
+    CREATE TABLE IF NOT EXISTS blogs (
+        title TEXT NOT NULL,
+        body TEXT NOT NULL,
+        author INT(11) NOT NULL
+    );
+
 CREATE TABLE IF NOT EXISTS videos (
     video_id INT(11) NOT NULL AUTO_INCREMENT,
     video_title VARCHAR(128),

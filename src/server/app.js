@@ -32,6 +32,10 @@ const fileAssets = express.static(path.join(__dirname, "../../dist/assets"));
 const adaptation = require("./adaptation");
 const invited = require("./invited");
 const players = require("./players");
+<<<<<<< HEAD
+=======
+const blogs = require("./blogs");
+>>>>>>> new_branch2
 
 const usersRouter = require("../../routes/users");
 
@@ -89,7 +93,11 @@ app.use(logger);
 const options = {
   host: "localhost",
   port: 3306,
+<<<<<<< HEAD
   user: "TPatterson5492",
+=======
+  user: "root",
+>>>>>>> new_branch2
   password: "Lunabean1^^",
   database: "wabase01",
 };
@@ -205,6 +213,10 @@ app.use("/adaptation", adaptation);
 app.use("/apidev", apidev);
 app.use("/invited", invited);
 app.use("/players", players);
+<<<<<<< HEAD
+=======
+app.use("/blogs", blogs);
+>>>>>>> new_branch2
 
 const PORT = 4500;
 

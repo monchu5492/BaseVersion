@@ -3,7 +3,11 @@ const mysql = require("mysql2");
 
 const pool = mysql.createPool({
   host: "localhost",
+<<<<<<< HEAD
   user: "TPatterson5492",
+=======
+  user: "root",
+>>>>>>> new_branch2
   password: "Lunabean1^^",
   database: "wabase01",
 });

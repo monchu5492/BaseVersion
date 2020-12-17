@@ -32,6 +32,7 @@ class VideoDashboard extends Component {
     const {
       videos,
     } = this.props;
+    // console.log(this.props)
     return (
       <div id="video-dashboard">
         <br />

@@ -1,6 +1,10 @@
 {
   "development": {
+<<<<<<< HEAD
     "username": "TPatterson5492",
+=======
+    "username": "root",
+>>>>>>> new_branch2
 
     "password": "Lunabean1^^",
 
@@ -8,7 +12,11 @@
 
     "host": "127.0.0.1",
 
+<<<<<<< HEAD
     "dialect": "mysql2"
+=======
+    "dialect": "mysql"
+>>>>>>> new_branch2
   },
 
   "test": {

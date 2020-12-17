@@ -1,5 +1,9 @@
 const app = require("express")();
+<<<<<<< HEAD
 const mysql = require("mysql2");
+=======
+const mysql = require("mysql");
+>>>>>>> new_branch2
 const http = require("http").Server(app);
 const io = require("socket.io")(http);
 
@@ -11,7 +15,11 @@ let game_expired = null;
 const pool = mysql.createPool({
   connectionLimit: 100,
   host: "localhost",
+<<<<<<< HEAD
   user: "TPatterson5492",
+=======
+  user: "root",
+>>>>>>> new_branch2
   password: "Lunabean1^^",
   database: "wabase01",
   debug: false,

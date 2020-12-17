@@ -17,6 +17,7 @@ class VideoPage extends Component {
 							this.props.video_id % 2 === 0 ? (
 								<tr className="even">
 									<td className="title">{this.props.video_title}</td>
+									<button onClick={() => {console.log(this.props)}}>hello</button>
 									<td id="uploaded">{this.props.date}</td>
 									<td>
 										<button
