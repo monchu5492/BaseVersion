@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Clock from './Clock.jsx';
 import '../../../stylesheets/OwnerDashboard.scss';
-import { OwnerTournaments, UserGreetingId } from '../containers';
+import { OwnerTournaments } from '../containers';
 import { withRouter } from 'react-router';
 import { MessageBoardId } from '../containers';
 import Header from './Header.jsx';
+// import TopMenu from './TopMenu.jsx';
 
 // https://stackoverflow.com/questions/40352310/how-do-you-mix-componentdidmount-with-react-redux-connect
 // https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html (replace componentWillMount)
@@ -45,7 +46,6 @@ class OwnerDashboard extends Component {
     } = this.props;
     return (
       <div id="owner-dashboard">
-        <UserGreetingId />
         <Header />
         <MessageBoardId />
         <Clock />
