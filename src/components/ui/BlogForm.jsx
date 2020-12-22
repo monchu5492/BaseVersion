@@ -48,7 +48,7 @@ function BlogForm(props) {
     return (
       <div className="container-fluid">
         <h1>Hello World!</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div class="form-group">
             <label for="exampleFormControlInput1">Email address</label>
             <input type="title" class="form-control" id="exampleFormControlInput1" placeholder="The Example Title"></input>
@@ -61,7 +61,7 @@ function BlogForm(props) {
             <label for="forUserName">Author</label>
             <input type="author" className="form-control" if="forUserName"></input>
           </div>
-            <button className="btn btn-success btn-sm">Submit</button>
+            <input type="submit" value="Save"></input>
         </form>
       </div>
     )
