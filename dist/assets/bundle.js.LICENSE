@@ -220,6 +220,8 @@
   !*** ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
   \**********************************************************************************/
 
+/*! react-is */
+
 /*!***************************************!*\
   !*** ./node_modules/isarray/index.js ***!
   \***************************************/
@@ -314,8 +316,6 @@ object-assign
   !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
   \************************************************************/
 
-/*! react-is */
-
 /*! object-assign */
 
 /*! ./checkPropTypes */
@@ -344,7 +344,7 @@ object-assign
   !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
   \*************************************************************/
 
-/** @license React v16.8.6
+/** @license React v16.14.0
  * react-dom.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -353,9 +353,9 @@ object-assign
  * LICENSE file in the root directory of this source tree.
  */
 
-/*! prop-types/checkPropTypes */
-
 /*! scheduler */
+
+/*! prop-types/checkPropTypes */
 
 /*! scheduler/tracing */
 
@@ -536,10 +536,6 @@ object-assign
   !*** ./node_modules/react-redux/es/utils/warning.js ***!
   \******************************************************/
 
-/*!***********************************************************************************************************!*\
-  !*** ./node_modules/react-redux/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
-  \***********************************************************************************************************/
-
 /*!********************************************************************!*\
   !*** ./node_modules/react-redux/node_modules/invariant/browser.js ***!
   \********************************************************************/
@@ -710,6 +706,10 @@ object-assign
   !*** ./node_modules/react-router/es/withRouter.js ***!
   \****************************************************/
 
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/react-router/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
+  \************************************************************************************************************/
+
 /*!*********************************************************************!*\
   !*** ./node_modules/react-router/node_modules/invariant/browser.js ***!
   \*********************************************************************/
@@ -724,7 +724,7 @@ object-assign
   !*** ./node_modules/react/cjs/react.development.js ***!
   \*****************************************************/
 
-/** @license React v16.8.6
+/** @license React v16.14.0
  * react.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -791,9 +791,9 @@ object-assign
   !*** ./node_modules/redux/es/utils/warning.js ***!
   \************************************************/
 
-/*!************************************************!*\
-  !*** ./node_modules/resolve-pathname/index.js ***!
-  \************************************************/
+/*!***************************************************************!*\
+  !*** ./node_modules/resolve-pathname/esm/resolve-pathname.js ***!
+  \***************************************************************/
 
 /*!**************************************************!*\
   !*** ./node_modules/rxjs/internal/Observable.js ***!
@@ -871,6 +871,10 @@ object-assign
   !*** ./node_modules/rxjs/internal/util/hostReportError.js ***!
   \************************************************************/
 
+/*!*****************************************************!*\
+  !*** ./node_modules/rxjs/internal/util/identity.js ***!
+  \*****************************************************/
+
 /*!****************************************************!*\
   !*** ./node_modules/rxjs/internal/util/isArray.js ***!
   \****************************************************/
@@ -884,14 +888,10 @@ object-assign
   \*****************************************************/
 
 /*!*************************************************!*\
-  !*** ./node_modules/rxjs/internal/util/noop.js ***!
-  \*************************************************/
-
-/*!*************************************************!*\
   !*** ./node_modules/rxjs/internal/util/pipe.js ***!
   \*************************************************/
 
-/*! ./noop */
+/*! ./identity */
 
 /*!*********************************************************!*\
   !*** ./node_modules/rxjs/internal/util/toSubscriber.js ***!
@@ -905,7 +905,7 @@ object-assign
   !*** ./node_modules/scheduler/cjs/scheduler-tracing.development.js ***!
   \*********************************************************************/
 
-/** @license React v0.13.6
+/** @license React v0.19.1
  * scheduler-tracing.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -918,7 +918,14 @@ object-assign
   !*** ./node_modules/scheduler/cjs/scheduler.development.js ***!
   \*************************************************************/
 
-/*! ./../../webpack/buildin/global.js */
+/** @license React v0.19.1
+ * scheduler.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
 /*!*****************************************!*\
   !*** ./node_modules/scheduler/index.js ***!
@@ -932,23 +939,19 @@ object-assign
 
 /*! ./cjs/scheduler-tracing.development.js */
 
-/*!*************************************************!*\
-  !*** ./node_modules/symbol-observable/index.js ***!
-  \*************************************************/
+/*!****************************************************!*\
+  !*** ./node_modules/symbol-observable/es/index.js ***!
+  \****************************************************/
 
-/*! ./lib/index */
+/*! ./ponyfill.js */
 
-/*!*****************************************************!*\
-  !*** ./node_modules/symbol-observable/lib/index.js ***!
-  \*****************************************************/
+/*! ./../../webpack/buildin/global.js */
 
-/*! ./ponyfill */
+/*! ./../../webpack/buildin/harmony-module.js */
 
-/*! ./../../webpack/buildin/module.js */
-
-/*!********************************************************!*\
-  !*** ./node_modules/symbol-observable/lib/ponyfill.js ***!
-  \********************************************************/
+/*!*******************************************************!*\
+  !*** ./node_modules/symbol-observable/es/ponyfill.js ***!
+  \*******************************************************/
 
 /*!****************************************************************!*\
   !*** ./node_modules/tiny-invariant/dist/tiny-invariant.esm.js ***!
@@ -958,9 +961,9 @@ object-assign
   !*** ./node_modules/tiny-warning/dist/tiny-warning.esm.js ***!
   \************************************************************/
 
-/*!*******************************************!*\
-  !*** ./node_modules/value-equal/index.js ***!
-  \*******************************************/
+/*!*****************************************************!*\
+  !*** ./node_modules/value-equal/esm/value-equal.js ***!
+  \*****************************************************/
 
 /*!*****************************************!*\
   !*** ./node_modules/warning/warning.js ***!
@@ -970,13 +973,15 @@ object-assign
   !*** (webpack)/buildin/global.js ***!
   \***********************************/
 
-/*!***********************************!*\
-  !*** (webpack)/buildin/module.js ***!
-  \***********************************/
+/*!*******************************************!*\
+  !*** (webpack)/buildin/harmony-module.js ***!
+  \*******************************************/
 
 /*!********************************************!*\
   !*** ./node_modules/whatwg-fetch/fetch.js ***!
   \********************************************/
+
+/*! exports provided: Headers, Request, Response, DOMException, fetch */
 
 /*!************************!*\
   !*** ./src/actions.js ***!
