@@ -3,9 +3,11 @@ import axios from 'axios';
 // import { connect } from 'react-redux';
 
 function BlogForm(props) {
-  // const [title, setTitle] = useState('')
-  // const [body, setBody] = useState('')
-  // const [author, setAuthor] = useState(0)
+  const [blog, setBlog] = useState({
+      title: '',
+      body: '',
+      author: '',
+  })
 
   // useEffect(() => {
   //   console.log(props)
