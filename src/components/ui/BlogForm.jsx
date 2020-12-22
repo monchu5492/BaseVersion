@@ -8,6 +8,11 @@ function BlogForm(props) {
       body: '',
       author: '',
   })
+  const sBlog = {
+      title: '',
+      body: '',
+      author: '',
+  }
 
   // useEffect(() => {
   //   console.log(props)
@@ -20,23 +25,12 @@ function BlogForm(props) {
     // }
   // });
 
-  // // handleSubmit = () => {
-  // //   if(!props.edit) {
-  // //     return axios.post('http://localhost:4500/blogs', {
-  // //       title,
-  // //       body,
-  // //       author,
-  // //     })
-  // //       .then((res) => console.log(res), setTitle(''), setBody(''), setAuthor(''))
-  // //   } else {
-  // //     return axios.patch(`http://localhost:4500/blogs/${props.blog._id}`, {
-  // //       title,
-  // //       body,
-  // //       author,
-  // //     })
-  // //       .then((res) => console.log(res), setTitle(''), setBody(''), setAuthor(''));
-  // //   }
-  // // }
+  handleSubmit = () => {
+      return axios.post('http://localhost:4500/blogs/postBlog', {
+        ...blog
+      })
+        .then((res) => console.log(res), setBlog(sBlog))
+  }
 
   // handleChangeField = (key, event) => {
   //   if(key == "Title"){
