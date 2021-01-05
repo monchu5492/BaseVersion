@@ -20,4 +20,14 @@ router.get("/checkBlog", (req, res) => {
   });
 });
 
+router.post("/postBlog", (req, res) => {
+  // let blog = req.body;
+  // connection.query("INSERT INTO `blogs` (name) VALUES (?)", username.toString(), function(err, result){
+  //     if(err) throw err;
+  //         console.log("1 record inserted");
+  //     });
+  // res.send(blog);
+  console.log("\n\n\nblog posted!!!\n\n\n", req, res);
+});
+
 module.exports = router;

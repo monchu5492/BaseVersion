@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Blogs } from "../containers"
+import { Blogs, NewBlog } from "../containers"
 import BlogForm from "./BlogForm.jsx";
 import { Component } from 'react';
 import { withRouter } from 'react-router';
@@ -37,7 +37,8 @@ class BlogContainer extends Component {
             <h1 className="text-center">Wild Blog</h1>
         <div className="row">
           <div className="col">
-            <BlogForm />
+            <NewBlog />
+            {/* <BlogForm /> */}
           </div>
           <div className="col">
             <Blogs blogs={blogs}/>

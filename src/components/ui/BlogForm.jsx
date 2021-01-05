@@ -1,20 +1,46 @@
 import React, { useState } from 'react';
-import fetch from "isomorphic-fetch";
-import { propTypes } from 'react-bootstrap/esm/Image';
+import axios from 'axios';
+import PropTypes from "prop-types";
 // import { connect } from 'react-redux';
 const apiPath = "http://localhost:4500";
 
-function BlogForm() {
+function BlogForm(props) {
   const [blog, setBlog] = useState({
     title: '',
     body: '',
     author: '',
-
   })
 
-  let handleSubmit = () => {
+  let handleSubmit = (e) => {
     e.preventDefault();
+    // props.onNewBlog({...blog})
+    console.log(Blog)
+    // const sendMessage = props.onMessage;
+    // // const hist = this.props.history;
+    // let dashOk = false;
     
+    // axios.post(`${apiPath}/blogs/postBlog`, {
+    //   ...blog
+    // })
+    // .then((response) => {
+    //   if (response.data !== 'undefined') {
+    //     console.log(response.data)
+    //     if (/^20000/.test(response.data)) {
+    //       dashOk = true;
+    //     } else {
+    //       // send the message to the message board action
+    //       return sendMessage(response.data);
+    //     }
+    //   }
+    // })
+    // .then(() => {
+    //   if (dashOk === true) { // all good let the user through
+    //     hist.push('/owner/dashboard');
+    //   }
+    // })
+    // .catch((error) => {
+    //   console.log(error);
+    // });
   }
 
   let handleChangeField = (e) => {
@@ -32,6 +58,7 @@ function BlogForm() {
     blog[name] = value
     setBlog(blog)
   }
+
 
     return (
       <div className="container-fluid">

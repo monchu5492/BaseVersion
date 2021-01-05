@@ -12,6 +12,7 @@ import blog from '../../../app/models/blog';
       return(
         <div className="container-fluid">
           {console.log(this.props)}
+          <div>{this.props.title}</div>
         <div className="card-footer">
           <div className="row">
             <button onClick={() => console.log("edit")} className="btn btn-primary mx-3 col">

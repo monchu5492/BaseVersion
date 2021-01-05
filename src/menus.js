@@ -10,7 +10,6 @@ const selectedStyle = {
   color: "cornflowerblue",
 };
 
-<<<<<<< HEAD
 export const MainMenu = () => (
   <nav className="main-menu">
     <NavLink to="/">
@@ -27,15 +26,6 @@ export const MainMenu = () => (
     </button>
   </nav>
 );
-=======
-export const MainMenu = () =>
-  (<nav className="main-menu">
-    <NavLink to="/"><HomeIcon /></NavLink>
-    <NavLink to="/about" activeStyle={selectedStyle}>About</NavLink>
-    <NavLink to="/owner/dashboard" activeStyle={selectedStyle}>Dashboard</NavLink>
-    <UserGreetingId />
-  </nav>);
->>>>>>> master
 
 export const AboutMenu = ({ match }) => (
   <div className="about-menu">

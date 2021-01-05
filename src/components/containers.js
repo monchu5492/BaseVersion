@@ -11,7 +11,7 @@ import UserGreeting from "./ui/UserGreeting.jsx";
 import VideoDashboard from "./ui/VideoDashboard.jsx";
 import VideoPageList from "./ui/VideoPageList.jsx";
 import BlogContainer from "./ui/BlogContainer.jsx";
-import BlogDisplay from "./ui/BlogDisplay.jsx";
+import BlogForm from "./ui/BlogForm.jsx";
 import BlogList from "./ui/BlogList.jsx";
 import MainMenu from "../menus";
 import {
@@ -28,8 +28,8 @@ import {
   fetchPlayerName,
   fetchOwnerTournaments,
   fetchLogout,
+  addBlog,
 } from "../actions";
-import { dispatch } from "rxjs/internal/observable/pairs";
 
 export const OwnerDashboardId = connect(
   (state) => ({
@@ -88,6 +88,15 @@ export const Videos = connect((state) => ({
 export const Blogs = connect((state) => ({
   blogs: state.blogsList.blogs,
 }))(BlogList);
+
+export const NewBlog = connect(null, (dispatch) => ({
+  onNewBlog(blog) {
+    dispatch(addBlog(blog));
+  },
+  onMessage(message) {
+    dispatch(setMessage(message));
+  },
+}))(BlogForm);
 
 export const NewUser = connect(null, (dispatch) => ({
   onNewUser(email, password) {
