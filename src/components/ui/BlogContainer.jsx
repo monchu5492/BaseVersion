@@ -12,6 +12,7 @@ function findBlogs (onFetch) {
 class BlogContainer extends Component {
   state = {
     onFetch: this.props.onFetch,
+    new: false,
   };
 
   componentDidMount() {
@@ -25,6 +26,11 @@ class BlogContainer extends Component {
       this._asyncRequest.cancel();
     }
   }
+
+  changeNew() {
+    this.state.new = !this.state.new
+    return this.state.new
+  }
   
   render(){
     console.log(this.props)
@@ -36,12 +42,12 @@ class BlogContainer extends Component {
       <div className="container-fluid blog" style={{paddingTop: "10em", width: "100vw"}}>
             <h1 className="text-center">Wild Blog</h1>
         <div className="row">
-          <div className="col">
+          <div className="col-md">
             <NewBlog />
             {/* <BlogForm /> */}
           </div>
-          <div className="col">
-            <Blogs blogs={blogs}/>
+          <div className="col-md">
+            <Blogs blogs={blogs} changeNew={this.changeNew}/>
         </div>
       </div>
     </div>

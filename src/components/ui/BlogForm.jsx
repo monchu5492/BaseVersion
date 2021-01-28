@@ -4,43 +4,52 @@ import PropTypes from "prop-types";
 // import { connect } from 'react-redux';
 const apiPath = "http://localhost:4500";
 
+const Blog = {
+  title: "",
+  body: "",
+  author: "",
+}
+
 function BlogForm(props) {
   const [blog, setBlog] = useState({
-    title: '',
-    body: '',
-    author: '',
+    title: "",
+    body: "",
+    author: "",
   })
 
   let handleSubmit = (e) => {
     e.preventDefault();
-    // props.onNewBlog({...blog})
-    console.log(Blog)
+    e.target.reset()
     // const sendMessage = props.onMessage;
     // // const hist = this.props.history;
     // let dashOk = false;
     
-    // axios.post(`${apiPath}/blogs/postBlog`, {
-    //   ...blog
-    // })
-    // .then((response) => {
-    //   if (response.data !== 'undefined') {
-    //     console.log(response.data)
-    //     if (/^20000/.test(response.data)) {
-    //       dashOk = true;
-    //     } else {
-    //       // send the message to the message board action
-    //       return sendMessage(response.data);
-    //     }
-    //   }
-    // })
-    // .then(() => {
-    //   if (dashOk === true) { // all good let the user through
-    //     hist.push('/owner/dashboard');
-    //   }
-    // })
-    // .catch((error) => {
-    //   console.log(error);
-    // });
+    axios.post(`${apiPath}/blogs/postBlog`, {
+      //going to add userid later as Author later to relate blog to user as well as display the user
+      ...blog, blog_id: Math.floor(Math.random()*1000),
+    })
+    .then((res) => {
+      console.log(res.body)
+     // setBlog(Blog)
+    })
+    .then((response) => {
+      if (response.data !== 'undefined') {
+        console.log(response.data)
+        if (/^20000/.test(response.data)) {
+          dashOk = true;
+        } else {
+          // send the message to the message board action
+          return sendMessage(response.data);
+        }
+      }
+    })
+    .then(() => {
+      if (dashOk === true) { // all good let the user through
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+    });
   }
 
   let handleChangeField = (e) => {
@@ -65,16 +74,16 @@ function BlogForm(props) {
         <h1>Hello World!</h1>
         <form onSubmit={handleSubmit}>
           <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input name="title" class="form-control" id="exampleFormControlInput1" placeholder="The Example Title" onChange={handleChangeField}></input>
+            <label for="FormControlInput1">Email address</label>
+    <input name="title" class="form-control" id="FormControlInput1" onChange={handleChangeField}></input>
           </div>
           <div className="form-group">
             <label for="formUserInput">Body</label>
             <textarea name="body" className="form-control" id="formUserInput" rows="6" onChange={handleChangeField}></textarea>
           </div>
           <div className="form-group">
-            <label for="forUserName">Author</label>
-            <input name="author" className="form-control" if="forUserName" onChange={handleChangeField}></input>
+            <label for="formUserName">Author</label>
+            <input name="author" className="form-control" id="formUserName"  onChange={handleChangeField}></input>
           </div>
           <input type="submit" value="Submit" />
         </form>

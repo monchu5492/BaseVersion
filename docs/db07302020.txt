@@ -22,9 +22,11 @@ CREATE TABLE IF NOT EXISTS users (
     );
 
     CREATE TABLE IF NOT EXISTS blogs (
+        blog_id INT(11) NOT NULL AUTO_INCREMENT,
         title TEXT NOT NULL,
         body TEXT NOT NULL,
-        author INT(11) NOT NULL
+        author INT(11) NOT NULL,
+        PRIMARY KEY (blog_id)
     );
 
 CREATE TABLE IF NOT EXISTS videos (

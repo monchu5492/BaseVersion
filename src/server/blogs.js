@@ -1,4 +1,4 @@
-import express from "express";
+import express, { response } from "express";
 import passport from "passport/lib/index";
 import session from "express-session"; // github.com/expressjs/session
 import { generalPromise } from "./wildAlmondsPromise";
@@ -22,12 +22,16 @@ router.get("/checkBlog", (req, res) => {
 
 router.post("/postBlog", (req, res) => {
   // let blog = req.body;
-  // connection.query("INSERT INTO `blogs` (name) VALUES (?)", username.toString(), function(err, result){
-  //     if(err) throw err;
-  //         console.log("1 record inserted");
-  //     });
-  // res.send(blog);
+  const blogPost = `INSERT INTO blogs (blog_id, title, body, author) VALUES (${req.body.blog_id}, "${req.body.title}", "${req.body.body}", ${req.body.author})`;
+  generalPromise(blogPost).then((payload) => {
+    console.log(req.body);
+    console.log(`Blog Complete! ${payload}`);
+  });
   console.log("\n\n\nblog posted!!!\n\n\n", req, res);
 });
+
+// router.patch("/patchBlog", (req, res) => {
+//   const blogUpdate = `UPDATE [LOW PRIORITY] [IGNORE] blogs SET `
+// })
 
 module.exports = router;
