@@ -286,9 +286,32 @@ export const checkForBlog = () =>
       });
   };
 
-// export const addBlog = () => function(dispatch) {
-
-// };
+export const addBlog = () =>
+  function(dispatch) {
+    return fetch(`${apiPath}/blogs/postBlog`, {
+      method: "post",
+      headers: { Accept: "application/json" },
+    })
+      .then((response) => {
+        if (response.ok) {
+          console.log(response.json());
+          return response.json();
+        }
+        throw new Error("Bad HTTP stuff");
+      })
+      .then(
+        (blogData) => (res.status(200).end(), console.log(blogData))
+        // dispatch(actionCreators.requestMessageSuccess(changedPassword))
+      )
+      .catch((error) => {
+        console.error(error);
+        console.log("there was an error");
+        // dispatch(actionCreators.requestMessageError(error));
+      })
+      .catch((err) => {
+        console.log("Error", err.message);
+      });
+  };
 
 export const fetchTournaments = () =>
   function(dispatch) {
@@ -419,33 +442,6 @@ export const addUser = () =>
       .catch((error) => {
         console.error(error);
         dispatch(actionCreators.requestMessageError(error));
-      })
-      .catch((err) => {
-        console.log("Error", err.message);
-      });
-  };
-
-export const addBlog = () =>
-  function(dispatch) {
-    return fetch(`${apiPath}/blogs/postBlog`, {
-      method: "post",
-      headers: { Accept: "application/json" },
-    })
-      .then((response) => {
-        if (response.ok) {
-          console.log(response.json());
-          return response.json();
-        }
-        throw new Error("Bad HTTP stuff");
-      })
-      .then(
-        (blogData) => (res.status(200).end(), console.log(blogData))
-        // dispatch(actionCreators.requestMessageSuccess(changedPassword))
-      )
-      .catch((error) => {
-        console.error(error);
-        console.log("there was an error");
-        // dispatch(actionCreators.requestMessageError(error));
       })
       .catch((err) => {
         console.log("Error", err.message);

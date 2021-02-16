@@ -22,7 +22,7 @@ router.get("/checkBlog", (req, res) => {
 
 router.post("/postBlog", (req, res) => {
   // let blog = req.body;
-  const blogPost = `INSERT INTO blogs (blog_id, title, body, author) VALUES (${req.body.blog_id}, "${req.body.title}", "${req.body.body}", ${req.body.author})`;
+  const blogPost = `INSERT INTO blogs (blog_id, title, body, author) VALUES (null, "${req.body.title}", "${req.body.body}", ${req.body.author})`;
   generalPromise(blogPost).then((payload) => {
     console.log(req.body);
     console.log(`Blog Complete! ${payload}`);
@@ -30,8 +30,14 @@ router.post("/postBlog", (req, res) => {
   console.log("\n\n\nblog posted!!!\n\n\n", req, res);
 });
 
-// router.patch("/patchBlog", (req, res) => {
-//   const blogUpdate = `UPDATE [LOW PRIORITY] [IGNORE] blogs SET `
-// })
+router.patch("/patchBlog", (req, res) => {
+  // SELECT title, body FROM blogs WHERE blog_id = ${req.body.blog_id};
+  const blogUpdate = `UPDATE blogs SET title = '${req.body.title}', body = '${req.body.body}' WHERE blog_id = '${req.body.blog_id}';`;
+  generalPromise(blogUpdate).then((payload) => {
+    console.log(req.body);
+    console.log(`Blog Update Complete! ${payload}`);
+  });
+  console.log("\n\n\nblog Updated!!!\n\n\n", req, res);
+});
 
 module.exports = router;

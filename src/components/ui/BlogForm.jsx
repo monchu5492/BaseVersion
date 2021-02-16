@@ -26,7 +26,7 @@ function BlogForm(props) {
     
     axios.post(`${apiPath}/blogs/postBlog`, {
       //going to add userid later as Author later to relate blog to user as well as display the user
-      ...blog, blog_id: Math.floor(Math.random()*1000),
+      ...blog,
     })
     .then((res) => {
       console.log(res.body)

@@ -260,6 +260,7 @@ export const blogsList = (state = {}, action = { type: null }) => {
     case C.FETCH_BLOGS:
       return {
         blogs: [],
+        edit: false,
         error: null,
         loading: true,
       };
@@ -267,6 +268,15 @@ export const blogsList = (state = {}, action = { type: null }) => {
       return {
         ...state,
         blogs: action.payload,
+        edit: false,
+        error: null,
+        loading: false,
+      };
+    case C.CHANGE_EDIT:
+      return {
+        ...state,
+        blogs: action.payload,
+        edit: true,
         error: null,
         loading: false,
       };

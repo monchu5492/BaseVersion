@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Blogs, NewBlog } from "../containers"
-import BlogForm from "./BlogForm.jsx";
 import { Component } from 'react';
 import { withRouter } from 'react-router';
+import axios from 'axios';
 
 function findBlogs (onFetch) {
   onFetch();
@@ -12,8 +12,9 @@ function findBlogs (onFetch) {
 class BlogContainer extends Component {
   state = {
     onFetch: this.props.onFetch,
-    new: false,
+    edit: this.props.edit,
   };
+
 
   componentDidMount() {
     this._asyncRequest = findBlogs(
@@ -26,17 +27,10 @@ class BlogContainer extends Component {
       this._asyncRequest.cancel();
     }
   }
-
-  changeNew() {
-    this.state.new = !this.state.new
-    return this.state.new
-  }
   
   render(){
-    console.log(this.props)
-    const {
-        blogs,
-      } = this.props;
+    console.log(this.props, 'props in render from BlogContainer')
+    const {blogs, edit} = this.props;
 
     return (
       <div className="container-fluid blog" style={{paddingTop: "10em", width: "100vw"}}>
@@ -44,13 +38,12 @@ class BlogContainer extends Component {
         <div className="row">
           <div className="col-md">
             <NewBlog />
-            {/* <BlogForm /> */}
           </div>
           <div className="col-md">
-            <Blogs blogs={blogs} changeNew={this.changeNew}/>
-        </div>
-      </div>
-    </div>
+            <Blogs blogs={blogs}/>
+         </div>
+       </div>
+     </div>
     );
   }
 }
@@ -58,6 +51,7 @@ class BlogContainer extends Component {
 BlogContainer.propTypes = {
   blogs: PropTypes.array,
   onFetch: PropTypes.func,
+  edit: PropTypes.bool,
 };
 
 BlogContainer.defaultProps = {

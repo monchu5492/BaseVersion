@@ -156,6 +156,7 @@ export const VideoDashboardId = connect(
 export const BlogDashboard = connect(
   (state) => ({
     blogs: state.blogsList.blogs,
+    edit: state.blogsList.edit,
   }),
   (dispatch) => ({
     onFetch() {
